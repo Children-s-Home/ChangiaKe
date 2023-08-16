@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  align-items: center;
+  background: linear-gradient(
+    152deg,
+    #eac28d 0%,
+    rgba(255, 234, 215, 0) 100%,
+    #ffead7 100%
+  );
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 81px;
+}
+
+.logo {
+  padding-left: 83px;
+}
+
+.logo h1 {
+  color: #e78124;
+  font-family: Do Hyeon;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo .ia {
+  color: #151212;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #e78124;
+  font-family: Changa;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  border-radius: 50px;
+  width: 118px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button .nav-links {
+  color: #fffbf5;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sign-up {
+    background: #E78124;
+}
+
+.sign-in {
+    background: #000;
+}
