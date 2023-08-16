@@ -20,7 +20,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="App">
+    <div className="app">
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/LogIn" element={<LogIn />} />
