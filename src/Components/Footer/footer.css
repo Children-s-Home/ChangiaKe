@@ -1,0 +1,19 @@
+.footer-container {
+    background: linear-gradient(180deg, #EAB98D 0%, #FFEAD7 100%);
+    height: 330px;
+    padding: 40px 80px 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
