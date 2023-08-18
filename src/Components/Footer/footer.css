@@ -82,3 +82,11 @@ a {
   font-weight: 500;
   line-height: normal;
 }
+
+.footer-icons{
+  margin-top: 45px;
+  display: flex;
+  gap: 80px;
+  width: 30px;
+  height: 30px;
+}

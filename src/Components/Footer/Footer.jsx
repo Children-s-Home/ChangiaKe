@@ -45,6 +45,20 @@ const Footer = () => {
             </form>
           </div>
         </div>
+        <div className="footer-icons">
+          <a href="">
+            <img src="/images/mdi_twitter.png" alt="" />
+          </a>
+          <a href="">
+            <img src="/images/ri_instagram-line.png" alt="" />
+          </a>
+          <a href="">
+            <img src="/images/ic_outline-facebook.png" alt="" />
+          </a>
+          <a href="">
+            <img src="/images/mdi_linkedin.png" alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );
