@@ -1,4 +1,4 @@
-import pImage from "../../assets/aboutUsParagraph.png"
+import pImage from "/images/aboutUsParagraph.png"
 
 function Content() {
   return (
