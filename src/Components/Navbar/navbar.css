@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: 95px;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   background: linear-gradient(
     152deg,
