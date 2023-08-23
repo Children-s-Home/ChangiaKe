@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 
 // Page imports
@@ -16,7 +15,6 @@ import SearchResults from "./Components/SearchResults/SearchResults";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const location = useLocation();
 
   return (
@@ -28,7 +26,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Article" element={<Article />} />
         <Route
-          path="/ChildrenHomeIndividual"
+          path="/indivdialChildrenHome"
           element={<ChildrenHomeIndividual />}
         />
         <Route path="/Blog" element={<Blog />} />
