@@ -26,7 +26,7 @@ const needs = [
   {
     id: 1,
     img: "mentor",
-    text: "Mentor",
+    text: "Mentors",
   },
   {
     id: 2,
@@ -45,5 +45,40 @@ const needs = [
   },
 ];
 
+const leaders = [
+  {
+    id: 1,
+    img: "njeri",
+    name: "Njeri Makena",
+    post: "House Matron",
+  },
+  {
+    id: 2,
+    img: "ann",
+    name: "Ann Marie",
+    post: "Coordinator",
+  },
+  {
+    id: 1,
+    img: "stacy",
+    name: "Stacy Chanzu",
+    post: "Manager",
+  },
+];
 
-export {content, needs}
+const galleryPics = [
+  {
+    id: 1,
+    img: "gallery-pic1",
+  },
+  {
+    id: 2,
+    img: "gallery-pic2",
+  },
+  {
+    id: 3,
+    img: "gallery-pic3",
+  },
+];
+
+export { content, needs, leaders, galleryPics };
