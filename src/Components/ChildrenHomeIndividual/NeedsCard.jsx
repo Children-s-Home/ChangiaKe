@@ -4,7 +4,7 @@ function NeedsCard(props) {
   return (
     <div className="needs-card-container">
         <div className="needs-card-image">
-            <img src={`/public/images/${props.img}.png`} alt="" />
+            <img src={`/images/${props.img}.png`} alt="" />
         </div>
         <h1>{props.text}</h1>
     </div>
