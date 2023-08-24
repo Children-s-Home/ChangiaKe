@@ -119,6 +119,19 @@
   padding: 8px 15px;
   cursor: pointer;
 }
+
+
+
+.sr-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+
+
+
 /* SearchResultsFilters */
 
 .sr-filters-container li {
@@ -145,4 +158,78 @@ input[type="checkbox"] {
   background: #fff;
   height: 18px;
   width: 18px;
+}
+
+
+
+
+
+
+/* Search Results Card */
+.sr-card-container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 267px;
+  border-radius: 20px;
+  background: #ffead7;
+  margin-bottom: 45px;
+}
+
+.sr-card-pic {
+  width: 100%;
+  height: 144px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.sr-card-container h1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sr-card-loaction {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.sr-card-container h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sr-card-container p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.sr-card-container button {
+  border-radius: 42px;
+  background: #000;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  align-self: flex-start;
+  padding: 4px 12px;
+  cursor: pointer;
 }

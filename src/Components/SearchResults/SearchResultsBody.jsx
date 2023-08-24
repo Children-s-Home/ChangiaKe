@@ -1,6 +1,6 @@
 import SearchResultsCard from "./SearchResultsCard";
 import SearchResultsFilters from "./SearchResultsFilters";
-import { servicesFilters, needsFilters } from "./data";
+import { servicesFilters, needsFilters, homes } from "./data";
 import "./sr.css";
 
 function SearchResultsBody() {
@@ -10,6 +10,15 @@ function SearchResultsBody() {
   const services = servicesFilters.map((item) => {
     return <SearchResultsFilters key={item.id} {...item} />;
   });
+
+  const childrenHomes = homes.map((item)=>{
+    return(
+      <SearchResultsCard
+      key={item.id}
+      {...item}
+       />
+    )
+  })
 
   return (
     <div className="sr-body-container">
@@ -26,7 +35,7 @@ function SearchResultsBody() {
         <button>Show Results</button>
       </div>
       <div className="sr-cards-container">
-        <SearchResultsCard />
+        {childrenHomes}
       </div>
     </div>
   );
