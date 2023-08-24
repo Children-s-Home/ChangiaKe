@@ -1,9 +1,18 @@
 import PropTypes from "prop-types"
 import "./sr.css"
+import { useNavigate } from "react-router-dom";
 
 
 
 function SearchResultsCard(props) {
+
+   const navigate = useNavigate();
+
+   const navigateToChi = () => {
+     // 👇️ navigate to /contacts
+     navigate("/individualChildrenHome");
+   };
+
   return (
     <div
       className="sr-card-container"
@@ -21,7 +30,7 @@ function SearchResultsCard(props) {
         <h2>{props.location}</h2>
       </div>
       <p>{props.text}</p>
-      <button>{props.button}</button>
+      <button onClick={navigateToChi}>{props.button}</button>
     </div>
   );
 }
