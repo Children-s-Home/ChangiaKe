@@ -1,4 +1,3 @@
-import React from 'react'
 import './blog.css'
 
 import Navbar from '../Navbar/Navbar'
