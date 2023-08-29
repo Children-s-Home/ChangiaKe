@@ -54,7 +54,7 @@ const Blog = () => {
               <span className="pk_blog_posts_title">I met my best friend while volunteering</span>
               <span className="pk_blog_posts_preview">
                 I've always been a big believer in the power of volunteering. It's a great way to give back to
-                your community, and it's also a great way...
+                your community, and it&apos;s also a great way...
 
               </span>
               <span className="pk_blog_posts_read_time">10 min read</span>
