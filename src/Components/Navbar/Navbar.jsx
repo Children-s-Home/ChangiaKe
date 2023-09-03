@@ -6,7 +6,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <h1>
-          Chang<span className="ia">ia</span>
+          <a href="/">
+            Chang<span className="ia">ia</span>
+          </a>
         </h1>
       </div>
 
