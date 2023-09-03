@@ -23,7 +23,7 @@
   padding-left: 83px;
 }
 
-.logo h1 {
+.logo h1 a{
   color: #e78124;
   font-family: Do Hyeon;
   font-size: 40px;

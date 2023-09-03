@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2, h3, span{
+    font-family: 'PT Sans', sans-serif;
+}
+.article-thmubnail img{
+    width: 100%;
+}
+.author-details{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+}
+.author-details div img{
+    width: 80%;
+}
+.author-details-words{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.author-details-words p{
+    margin-top: 10px;
+}
+.main-article .line{
+    width: auto;
+    height: 3px;
+    background: #D9D9D9;
+    margin: 10px 55px;
+}
+.article-words{
+    margin: 50px;
+    text-align: justify;
+}
+.article-words p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 172.727% */
+}
+.article-words h3{
+    color: #000;
+    font-family: PT Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 172.727% */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.article-words .articleImage{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.article-words .articleImage img{
+    width: 100%;
+}
+.article-words p span{
+    font-weight:600;
+}
+.article-words .articleSpan{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.related-articles{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.related-articles .related-articles-heading{
+    text-align: center;
+}
+.related-articles .related-articles-heading h1{
+    color: #E78124;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.individual-related-articles{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin: 30px 50px;
+}
+.individual-related-articles .individual-related-article{
+    background: #FCF8F4;
+}
+.individual-related-articles .individual-related-article img{
+    width: 100%;
+    height: 50vh;
+}
+.individual-related-articles .individual-related-article p.date{
+    color: #3F3D56;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.individual-related-articles .individual-related-article h3{
+    color: #E78124;
+    font-family: PT Serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.individual-related-articles .individual-related-article p.author{
+    color: #3F3D56;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
