@@ -8,10 +8,10 @@ import "./sr.css"
 const SearchResults = () => {
   return (
     <div className="sr-container">
-      <Navbar />
+      {/* <Navbar /> */}
       <SearchBar />
       <SearchResultsBody />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

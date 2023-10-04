@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="links">
         <div className="column">
-          <Link className="footer-links" to="/DonationVolunteeringFundraising">
+          <Link className="footer-links" to="/Impact">
             How to help
           </Link>
 

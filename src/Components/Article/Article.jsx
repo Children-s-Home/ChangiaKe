@@ -10,7 +10,6 @@ import RelatedArticle from "../../../public/images/article_assets/children-in-cl
 const Article = () => {
   return (
     <div className='main-article'>
-    <Navbar/>
       <div className="article-thmubnail">
         <img src={ArticleThmubnail} alt="thumbnail of article" />
       </div>
@@ -75,7 +74,6 @@ const Article = () => {
         </div>
       </div>
 
-    <Footer/>
     </div>
 
   )
