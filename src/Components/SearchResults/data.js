@@ -141,7 +141,7 @@ const homes = [
     backgroundColor: "#EAC28D",
   },
   {
-    id: 12,
+    id: 12, 
     img: "joyful-life",
     name: "Joyful Life",
     location: "Jericho",

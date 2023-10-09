@@ -6,7 +6,7 @@ import Gallery from "./Gallery"
 import Leadership from "./Leadership"
 import Need from "./Need"
 import "./chi.css"
-
+ 
 const ChildrenHomeIndividual = () => {
   return (
     <div className="chi-container">
@@ -17,7 +17,6 @@ const ChildrenHomeIndividual = () => {
       <Leadership />
       <Gallery />
       <Footer />
-
     </div>
   )
 }
