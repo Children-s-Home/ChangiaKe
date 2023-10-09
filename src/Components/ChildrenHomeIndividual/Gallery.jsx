@@ -5,7 +5,7 @@ import "./chi.css";
 function Gallery() {
   const individualSlide = galleryPics.map((pic) => {
     return <IndividualSlide key={pic.id} {...pic} />;
-  });
+  }); 
 
   return (
     <div className="gallery-container">

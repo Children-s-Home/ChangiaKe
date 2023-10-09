@@ -22,7 +22,7 @@ const Article = () => {
           <p>29 June 2023 • 7 min read</p>
         </div>
       </div>
-      <div className="line"></div>
+      <div className="line"></div> 
       <div className='article-words'>
         <p>At some point, many of us declare that we want to volunteer more. We might start volunteering somewhat accidentally.Volunteering is a great way to give back to your community, make a difference in the lives of others, and learn new skills. But before you jump into volunteering, there are a few things you need to know.</p>
         <h3>1. Know  your Why</h3>
