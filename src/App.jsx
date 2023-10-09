@@ -17,11 +17,12 @@ import DonationVolunteeringFundraising from "./Components/DonationVolunteeringFu
 import SearchResults from "./Components/SearchResults/SearchResults";
 
 import "./App.css";
+import Layout from "./Components/Layout";
 
 function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route key={location.pathname} location={location}>
+      <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/LogIn" element={<LogIn />} />
         <Route path="/Register" element={<Register />} />
