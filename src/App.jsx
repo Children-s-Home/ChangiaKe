@@ -1,14 +1,17 @@
+
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
+
 // Page imports
-import LogIn from "./Components/LogIn/LogIn"
-import Register from "./Components/Register/Register"
-import Home from "./Components/Home/Home"
-import AboutUs from "./Components/AboutUs/AboutUs"
-import Article from "./Components/Article/Article"
+import LogIn from "./Components/LogIn/LogIn";
+import Register from "./Components/Register/Register";
+import Home from "./Components/Home/Home";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Article from "./Components/Article/Article";
 import Blog from "./Components/Blog/Blog";
 import ChildrenHomeIndividual from "./Components/ChildrenHomeIndividual/ChildrenHomeIndividual";
 import SearchResults from "./Components/SearchResults/SearchResults";
+
 
 
 import './App.css'
@@ -49,7 +52,10 @@ function App() {
         </Route>
       </Routes>
     </div>
+
   );
+
+  return <RouterProvider router={routes} />;
 }
 
-export default App
+export default App;
