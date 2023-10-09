@@ -7,7 +7,7 @@ import Navbar from '../Navbar/Navbar'
 const Blog = () => {
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       {/* <header>
         <div className="pk_blog_posts_header">
           <img style={{position:'absolute', left: '30px', top: 'auto'}} src={logo} alt=""/>
@@ -159,7 +159,7 @@ const Blog = () => {
 
       </div>
 
-      <footer>
+      {/* <footer>
         <div className="pk_blog_posts_footer_main_container">
 
           <div className="pk_blog_posts_quick_links_container">
@@ -202,7 +202,7 @@ const Blog = () => {
           </div>
 
         </div>
-      </footer>
+      </footer> */}
     </>
   )
 }

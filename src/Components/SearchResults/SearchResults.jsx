@@ -6,8 +6,11 @@ import "./sr.css"
 const SearchResults = () => {
   return (
     <div className="sr-container">
+
       <SearchBar />
       <SearchResultsBody />
+      
+
     </div>
   );
 }

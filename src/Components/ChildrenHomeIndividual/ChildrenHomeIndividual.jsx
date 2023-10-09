@@ -8,6 +8,7 @@ import "./chi.css";
 const ChildrenHomeIndividual = () => {
   return (
     <div className="chi-container">
+
       <ChiBanner />
       <ChiContent />
       <Need />

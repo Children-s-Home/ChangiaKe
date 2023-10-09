@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className="Main">
         <div className="home-box">
-            <nav>
+            {/* <nav>
                 <div className="logo">
                     <p><a href="#"><span className="orange">Chang</span><span className="black">ia</span></a></p>
                 </div>
@@ -33,7 +33,7 @@ function Home() {
                         <button className='btn2'><a href="/LogIn">Sign In</a></button>
                     </ul>
                 </div>
-            </nav>
+            </nav> */}
             <div className="home-content">
                 <div className="home-words">
                     <h3><span className="black">Give back</span><span className="orange"> to your community.</span><br/><span className="orange"> Find a</span><span className="black"> children's home </span><span className="orange">near<br/>you.</span></h3>
@@ -193,7 +193,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <footer>
+        {/* <footer>
             <div className="footer-overall">
                 <div className="pages">
                     <ul>
@@ -226,7 +226,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> */}
     </div>
   );
 }

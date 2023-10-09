@@ -20,7 +20,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-links" to="/DonationVolunteeringFundraising">
+            <Link className="nav-links" to="/Impact">
               Discover
             </Link>
           </li>

@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 95px;
   width: 100%;
   align-items: center;
   background: linear-gradient(
@@ -10,18 +9,15 @@
     rgba(255, 234, 215, 0) 100%,
     #ffead7 100%
   );
+  padding: 1rem 4rem;
 }
 
 .menu-items {
   list-style: none;
   display: flex;
   gap: 40px;
-  padding: 81px;
 }
 
-.logo {
-  padding-left: 83px;
-}
 
 .logo h1 a{
   color: #e78124;

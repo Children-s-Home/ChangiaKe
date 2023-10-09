@@ -85,7 +85,6 @@ a{
 .home-content {
     display: flex;
     flex-direction: row;
-    margin-top: -20px;
 }
 .home-content .home-words {
     margin-top: 7%;
