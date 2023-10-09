@@ -7,10 +7,8 @@ import "./aboutUs.css";
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-      <Navbar />
       <Content />
       <Contact />
-      <Footer />
     </div>
   );
 };

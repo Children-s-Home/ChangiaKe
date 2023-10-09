@@ -10,13 +10,12 @@ import "./chi.css"
 const ChildrenHomeIndividual = () => {
   return (
     <div className="chi-container">
-      <Navbar />
+      {/* <Navbar /> */}
       <ChiBanner />
       <ChiContent />
       <Need />
       <Leadership />
       <Gallery />
-      <Footer />
     </div>
   )
 }

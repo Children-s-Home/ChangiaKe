@@ -1,6 +1,5 @@
 .footer-container {
   background: linear-gradient(180deg, #eab98d 0%, #ffead7 100%);
-  height: 330px;
   padding: 40px 60px 30px 80px;
   display: flex;
   justify-content: space-between;
