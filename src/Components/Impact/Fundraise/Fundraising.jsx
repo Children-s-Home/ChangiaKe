@@ -2,7 +2,8 @@ import React from 'react'
 
 function Fundraising() {
   return (
-    <div>Fundraising</div>
+    <div><p>Fundraising</p>
+    </div>
   )
 }
 

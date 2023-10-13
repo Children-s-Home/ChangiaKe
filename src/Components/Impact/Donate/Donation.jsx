@@ -1,7 +1,11 @@
+import DonationForm from "./DonationForm"
 
 function Donation() {
   return (
-    <div>Donations</div>
+    <div>
+      <p>Donations</p>
+      <DonationForm />
+    </div>
   )
 }
 
