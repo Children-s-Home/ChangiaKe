@@ -2,10 +2,10 @@ import React from 'react'
 import "./Article.css"
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer"
-import ArticleThmubnail from "../../../public/images/article_assets/article-thumbnail.png"
-import Author from "../../../public/images/article_assets/author.png"
-import ArticleImg from "../../../public/images/article_assets/child-with-ball.png"
-import RelatedArticle from "../../../public/images/article_assets/children-in-class.png"
+import ArticleThmubnail from "/images/article_assets/article-thumbnail.png"
+import Author from "/images/article_assets/author.png"
+import ArticleImg from "/images/article_assets/child-with-ball.png"
+import RelatedArticle from "/images/article_assets/children-in-class.png"
 
 const Article = () => {
   return (
