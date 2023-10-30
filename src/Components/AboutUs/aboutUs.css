@@ -1,14 +1,14 @@
 .about-us-container {
-  font-style: normal;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .content-container {
-  margin-top: 61px;
   display: flex;
-  flex-direction: column;
-  gap: 0;
-  width: 100vw;
-  overflow-x: hidden;
+  flex-direction: column;  
+  gap: 30px;
 }
 
 .title {
@@ -18,11 +18,6 @@
 h1.title {
   color: #151212;
   text-align: center;
-  font-family: DM Sans;
-  font-size: 70px;
-
-  font-weight: 700;
-  line-height: normal;
 }
 
 .title span {
@@ -32,63 +27,54 @@ h1.title {
 .content {
   display: flex;
   gap: 70px;
-  margin-top: 90px;
-  margin-left: 86px;
   align-items: center;
 }
 
 .content p {
-  width: 500px;
+  flex: 1;
   color: #000;
-  text-align: justify;
-  font-family: Roboto;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 40px; /* 211.538% */
 }
 
-.paragraph img {
-  width: 600px;
-  height: 700px;
+.about-us-image {
+  flex: 1;
+  background-image: url("/public/images/About-us/105340884028a91e92c058cc15eae8ce.jpeg");
+  background-size: cover;
+  background-position: center;
   border-radius: 50px;
+  background-repeat: no-repeat;
+  height: 700px;
+
 }
+
 
 /* Contact card css */
 .contact-section {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
+  gap: 80px;
+  align-items: center;
 }
 
 .contact-card {
-  margin-top: 80px;
-  align-self: center;
+  width: 100%;
   border: 5px solid #d4d4d4;
   box-shadow: 10px 10px 3px -3px #00000030;
   background: #fff;
-  width: 85%;
   display: flex;
   flex-direction: column;
-  padding: 40px 0px;
-  margin-bottom: 100px;
+  padding: 33px;
+  gap: 45px;
 }
 
 .contact-card h2 {
-  margin-left: 59px;
   color: #000;
-  font-family: Inter;
-  font-size: 40px;
-
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 400  !important;
 }
 
 .form-container {
   display: flex;
-  margin-top: 53px;
   width: 100%;
   justify-content: center;
-  padding: 0px 40px;
 }
 
 .form {
@@ -97,17 +83,10 @@ h1.title {
 
 .form input,
 textarea {
-  /* width: 500px; */
-  padding: 28px 0px 28px 33px;
+  padding: 10px;
   width: 100%;
   max-width: 100%;
   margin-bottom: 34px;
-
-  color: #707070;
-  font-family: Inter;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .row {
@@ -117,19 +96,11 @@ textarea {
 }
 
 .submit {
-  margin-top: 40px;
-  width: 191px;
-  height: 60px;
+  padding: 8px 16px;
   border-radius: 50px;
-  background: #e78124;
+  background: var(--secondary);
   border: none;
-
-  color: #fff;
-  text-align: center;
-  font-family: Inter;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: normal;
+  cursor: pointer;
 }
 
 .submit-button {
