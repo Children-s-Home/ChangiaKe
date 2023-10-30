@@ -1,8 +1,8 @@
 /* css variables - Text, Colors */
 
 :root {
-  --primary-text: #000;
-  --secondary-text: #e78124;
+  --primary: #000;
+  --secondary: #e78124;
 }
 
 .heading-large {
@@ -22,7 +22,6 @@
 }
 
 .text-small {
-  text-align: center;
   font-family: Roboto;
   font-size: 1.25rem;
   font-style: normal;
@@ -31,7 +30,6 @@
 }
 
 .text-xsmall {
-  text-align: center;
   font-family: Roboto;
   font-size: 1.875rem;
   font-style: normal;
@@ -42,7 +40,7 @@
 .text-normal {
   text-align: justify;
   font-family: Roboto;
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   font-style: normal;
   font-weight: 400;
   line-height: 3.125rem; /* 208.333% */

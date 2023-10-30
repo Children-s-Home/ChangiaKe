@@ -4,17 +4,21 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Navigate,
+
 } from "react-router-dom";
 
 // Page imports
 import LogIn from "./Components/LogIn/LogIn";
 import Register from "./Components/Register/Register";
 import Home from "./Components/Home/Home";
+import { action as messageAction } from "./Components/AboutUs/Contact";
 import AboutUs from "./Components/AboutUs/AboutUs";
+
 import Article from "./Components/Article/Article";
 import Blog from "./Components/Blog/Blog";
 import ChildrenHomeIndividual from "./Components/ChildrenHomeIndividual/ChildrenHomeIndividual";
 import SearchResults from "./Components/SearchResults/SearchResults";
+
 
 import "./App.css";
 import Donation from "./Components/Impact/Donate/Donation";
@@ -30,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/LogIn" element={<LogIn />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/AboutUs" element={<AboutUs />} action={messageAction} />
         <Route path="/Article" element={<Article />} />
         <Route
           path="/individualChildrenHome"

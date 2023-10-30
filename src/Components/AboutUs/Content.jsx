@@ -1,11 +1,12 @@
-import pImage from "/images/aboutUsParagraph.png"
 
 function Content() {
   return (
     <div className="content-container">
-      <h1 className="title">About <span>Us</span></h1>
+      <h1 className="title heading-large">
+        About <span>Us</span>
+      </h1>
       <div className="content">
-        <p>
+        <p className="text-normal">
           Changia was formed in 2023 in response to the founders&apos; struggle
           to find volunteering opportunities during their university&apos;s
           Community-based Learning period. Realizing the difficulty of finding
@@ -18,7 +19,9 @@ function Content() {
           a meaningful impact. They welcome questions, ideas, feedback, or
           simply a friendly greeting from users of their platform.
         </p>
-        <img src={pImage} alt="" />
+
+        <div className="about-us-image">
+        </div>
       </div>
     </div>
   );
