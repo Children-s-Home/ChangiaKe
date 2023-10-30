@@ -23,8 +23,8 @@ import Fundraising from "./Components/Impact/Fundraise/Fundraising";
 import Volunteering from "./Components/Impact/Volunteer/Volunteering";
 import ImpactLayout from "./Components/Impact/ImpactLayout";
 import AppLayout from "./AppLayout";
-import Dashboard from "./Components/Host/Dashboard/Dashboard";
-import EditPost from "./Components/Host/EditPost/EditPost";
+// import Dashboard from "./Components/Host/Dashboard/Dashboard";
+// import EditPost from "./Components/Host/EditPost/EditPost";
 
 import { requireAuth } from "./Components/LogIn/fakeAuth";
 
@@ -51,7 +51,7 @@ function App() {
           <Route path="volunteer" element={<Volunteering />} />
         </Route>
 
-        <Route
+        {/* <Route
           path="/dashboard"
           element={<Dashboard />}
           loader={async () => await requireAuth()}
@@ -60,7 +60,7 @@ function App() {
           path="/editPost"
           element={<EditPost />}
           loader={async () => await requireAuth()}
-        />
+        /> */}
 
         {/* <Route path="*" element={<NotFound />} /> */}
       </Route>
