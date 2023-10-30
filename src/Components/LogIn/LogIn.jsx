@@ -1,6 +1,13 @@
 import { Form, Link } from "react-router-dom";
 import "./logIn.css";
 
+export async function action ({request}) {
+    const formData = await request.formData();
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    return null;
+}
+
 const LogIn = () => {
   return (
     <div className="logIn-container">
@@ -9,7 +16,7 @@ const LogIn = () => {
         <h1 className="heading-large">
           Welcome to <span>Chang</span>ia
         </h1>
-        <Form>
+        <Form method="post" >
           <input type="email" placeholder="Email" name="email" required />
           <input
             type="password"
