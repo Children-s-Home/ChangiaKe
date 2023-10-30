@@ -2,7 +2,7 @@ import Author from "/images/article_assets/author.png"
 
 import {author_details} from './data'
 
-function AuthorDetails(props){
+function AuthorDetails(){
     const authorSection = author_details.map((section)=>{
         return(
           <div className="author-details" key={section.id}>
