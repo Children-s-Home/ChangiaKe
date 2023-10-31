@@ -8,7 +8,7 @@
 
 .logIn-image {
   flex: 1;
-  background-image: url("/public/images/27d85ac8c6c0c352c3fd45e7b6ec7af7.jpeg");
+  background-image: url("/images/27d85ac8c6c0c352c3fd45e7b6ec7af7.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,4 +70,10 @@ form > button {
 
 .register-link {
     color: var(--secondary);
+}
+
+.warning {
+    color: red;
+    font-size: 20px !important;
+    text-align: center;
 }

@@ -1,5 +1,10 @@
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useLoaderData } from "react-router-dom";
 import "./logIn.css";
+
+export function loader ({request}) {
+
+  return new URL(request.url).searchParams.get("message");
+}
 
 export async function action ({request}) {
     const formData = await request.formData();
@@ -8,15 +13,21 @@ export async function action ({request}) {
     return null;
 }
 
+
 const LogIn = () => {
+  const message = useLoaderData()
   return (
     <div className="logIn-container">
       <div className="logIn-image"></div>
       <div className="logIn-content">
-        <h1 className="heading-large">
-          Welcome to <span>Chang</span>ia
-        </h1>
-        <Form method="post" >
+        <div>
+          <h1 className="heading-large">
+            Welcome to <span>Chang</span>ia
+          </h1>
+          {message && <p className="text-small warning">{message}</p>}
+        </div>
+
+        <Form method="post">
           <input type="email" placeholder="Email" name="email" required />
           <input
             type="password"
