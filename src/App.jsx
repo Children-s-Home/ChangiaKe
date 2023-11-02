@@ -9,8 +9,13 @@ import {
 import "./App.css";
 
 // Page imports
-import LogIn, { action as logInAction , loader as logInLoader} from "./Components/LogIn/LogIn";
-import Register from "./Components/Register/Register";
+import LogIn, {
+  action as logInAction,
+  loader as logInLoader,
+} from "./Components/LogIn/LogIn";
+import Register, {
+  action as registerAction,
+} from "./Components/Register/Register";
 import Home from "./Components/Home/Home";
 import { action as messageAction } from "./Components/AboutUs/Contact";
 import AboutUs from "./Components/AboutUs/AboutUs";
@@ -24,7 +29,7 @@ import Volunteering from "./Components/Impact/Volunteer/Volunteering";
 import ImpactLayout from "./Components/Impact/ImpactLayout";
 import AppLayout from "./AppLayout";
 import Dashboard from "./Components/Host/DashBoard/Dashboard";
-import EditPost from "./Components/Host/EditPost/EditPost"
+import EditPost from "./Components/Host/EditPost/EditPost";
 
 import { requireAuth } from "./Components/LogIn/fakeAuth";
 
@@ -40,7 +45,11 @@ function App() {
           action={logInAction}
           loader={logInLoader}
         />
-        <Route path="/register" element={<Register />} />
+        <Route
+          path="/register"
+          element={<Register />}
+          action={registerAction}
+        />
         <Route path="/AboutUs" element={<AboutUs />} action={messageAction} />
         <Route path="/Article" element={<Article />} />
         <Route
