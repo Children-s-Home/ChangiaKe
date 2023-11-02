@@ -1,5 +1,5 @@
 import ArticleImg from "/images/article_assets/child-with-ball.png"
-import { article} from './data'
+import {article} from './data'
 
 function MainArticle(){
     const articleSection = article.map((section)=>{
