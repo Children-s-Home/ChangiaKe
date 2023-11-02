@@ -1,7 +1,12 @@
 
 function Dashboard() {
+  function logOut() {
+    localStorage.removeItem("loggedin");
+  }
   return (
-    <div>Dashboard</div>
+    <div>Dashboard
+      <button onClick={logOut} >LogOut</button>
+    </div>
   )
 }
 

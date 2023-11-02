@@ -9,7 +9,7 @@ import {
 import "./App.css";
 
 // Page imports
-import LogIn, { action as logInAction } from "./Components/LogIn/LogIn";
+import LogIn, { action as logInAction , loader as logInLoader} from "./Components/LogIn/LogIn";
 import Register from "./Components/Register/Register";
 import Home from "./Components/Home/Home";
 import { action as messageAction } from "./Components/AboutUs/Contact";
@@ -23,8 +23,8 @@ import Fundraising from "./Components/Impact/Fundraise/Fundraising";
 import Volunteering from "./Components/Impact/Volunteer/Volunteering";
 import ImpactLayout from "./Components/Impact/ImpactLayout";
 import AppLayout from "./AppLayout";
-// import Dashboard from "./Components/Host/Dashboard/Dashboard";
-// import EditPost from "./Components/Host/EditPost/EditPost";
+import Dashboard from "./Components/Host/DashBoard/Dashboard";
+import EditPost from "./Components/Host/EditPost/EditPost"
 
 import { requireAuth } from "./Components/LogIn/fakeAuth";
 
@@ -34,7 +34,12 @@ function App() {
     createRoutesFromElements(
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/logIn" element={<LogIn />} action={logInAction} />
+        <Route
+          path="/logIn"
+          element={<LogIn />}
+          action={logInAction}
+          loader={logInLoader}
+        />
         <Route path="/register" element={<Register />} />
         <Route path="/AboutUs" element={<AboutUs />} action={messageAction} />
         <Route path="/Article" element={<Article />} />
@@ -51,7 +56,7 @@ function App() {
           <Route path="volunteer" element={<Volunteering />} />
         </Route>
 
-        {/* <Route
+        <Route
           path="/dashboard"
           element={<Dashboard />}
           loader={async () => await requireAuth()}
@@ -60,7 +65,7 @@ function App() {
           path="/editPost"
           element={<EditPost />}
           loader={async () => await requireAuth()}
-        /> */}
+        />
 
         {/* <Route path="*" element={<NotFound />} /> */}
       </Route>
