@@ -1,15 +1,7 @@
-import React from 'react'
-import VolunteerCardsContainer from './VolunteerCardsContainer'
-import childrensHome from "./Volunteering_data"
-import "./Volunteering.css"
+import React from "react";
 
 function Volunteering() {
-  return (
-    <div><p>Volunteering</p>
-      <div>
-      <VolunteerCardsContainer homes={childrensHome} />
-      </div></div>
-  )
+  return <div>Volunteering</div>;
 }
 
-export default Volunteering
+export default Volunteering;
