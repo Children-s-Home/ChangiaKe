@@ -1,21 +1,33 @@
-import { Form, Link, useLoaderData } from "react-router-dom";
+import {
+  Form,
+  Link,
+  useLoaderData,
+  redirect,
+  useActionData,
+} from "react-router-dom";
+import { loginUser } from "./fakeAuth";
+
 import "./logIn.css";
 
-export function loader ({request}) {
-
+export function loader({ request }) {
   return new URL(request.url).searchParams.get("message");
 }
 
-export async function action ({request}) {
-    const formData = await request.formData();
-    const data = Object.fromEntries(formData);
-    console.log(data);
-    return null;
+export async function action({ request }) {
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+  const { email, password } = data;
+  const response = await loginUser(email, password);
+  if (response.status === 200) {
+    return redirect("/dashboard");
+  } else {
+    return response.message;
+  }
 }
 
-
-const LogIn = () => {
-  const message = useLoaderData()
+export default function LogIn() {
+  const message = useLoaderData();
+  const err = useActionData();
   return (
     <div className="logIn-container">
       <div className="logIn-image"></div>
@@ -24,10 +36,12 @@ const LogIn = () => {
           <h1 className="heading-large">
             Welcome to <span>Chang</span>ia
           </h1>
+          {err && <p className="text-small warning">{err}</p>}
+
           {message && <p className="text-small warning">{message}</p>}
         </div>
 
-        <Form method="post">
+        <Form method="post" replace>
           <input type="email" placeholder="Email" name="email" required />
           <input
             type="password"
@@ -59,6 +73,4 @@ const LogIn = () => {
       </div>
     </div>
   );
-};
-
-export default LogIn;
+}
