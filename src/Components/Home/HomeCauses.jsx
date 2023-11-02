@@ -3,7 +3,7 @@ import { causes } from './data';
 function HomeCauses(){
     const causeData = causes.map((cause_section)=>{
         return(
-            <div className="cause-one">
+            <div className="cause-one" key={cause_section.id}>
                 <img className='larg-img' src={cause_section.main_image} alt="giving hands" /><br/>
                 <div className="location">
                     <img src={cause_section.location_image_source} alt="" />

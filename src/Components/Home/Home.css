@@ -256,19 +256,19 @@ input:focus {
     width: 22%;
 }
 .testimonials .testimonials-words{
-    padding-top: 5%;
+    padding-top: 6%;
 }
 .testimonials p{
     color: #2F2E41;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 45px; 
     margin-top: 4%;
     margin-left: 5%;
     text-align: justify;
-
+    padding-right: 10%;
 }
 .testimonials p span.brown{
     color: #C8905D;
@@ -471,6 +471,7 @@ input:focus {
     font-style: normal;
     font-weight: 400;
     line-height: 32px; 
+    padding-top: 5%;
 }
 .blog .blog-overall .main-right p{
     color: #000;
@@ -497,7 +498,7 @@ input:focus {
     width: 505px;
     height: 2px;
     background: #A7A3A3;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .blog .blog-overall .main-right .main-right-two, .blog .blog-overall .main-right .main-right-three{
     margin-top: 9%;
