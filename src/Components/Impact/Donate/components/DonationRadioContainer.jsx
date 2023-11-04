@@ -2,10 +2,18 @@ import PropTypes from "prop-types";
 import "../Donation.css";
 
 function DonationRadioContainer({ value, name, label }) {
+  
   return (
     <div className="radio-container">
-      <input type="radio" value={value} name={name} />
-      <span className="radio-lbl">{label}</span>
+      <input
+        type="radio"
+        id={value}
+        value={value}
+        name={name}
+      />
+      <label htmlFor={value} className="radio-lbl">
+        {label}
+      </label>
     </div>
   );
 }

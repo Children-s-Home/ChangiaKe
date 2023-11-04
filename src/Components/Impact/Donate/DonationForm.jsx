@@ -81,7 +81,7 @@ function DonationForm() {
           />
         </RadioContainer>
         <DonationCtaBtn>Donate Now</DonationCtaBtn>
-      </form> 
+      </form>
       <Rule className="vr" />
       <div className="donation-form-right">
         <p className="payment-option-txt">Our payment options</p>
