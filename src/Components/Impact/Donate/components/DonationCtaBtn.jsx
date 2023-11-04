@@ -1,8 +1,10 @@
-import "../Donation.css"
-function DonationCtaBtn({children}) {
-  return (
-      <button className='donation-cta'>{children}</button>
-  )
+import PropTypes from "prop-types";
+
+import "../Donation.css";
+
+function DonationCtaBtn({ children }) {
+  return <button className="donation-cta">{children}</button>;
 }
 
-export default DonationCtaBtn
+DonationCtaBtn.propTypes = {};
+export default DonationCtaBtn;

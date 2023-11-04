@@ -1,4 +1,7 @@
-import DollarSign from "../../../assets/dollarSign";
+import PropTypes from "prop-types";
+
+import DollarSign from "../../../../assets/dollarSign";
+
 function DonationPriceBtn({ price }) {
   return (
     <button className="donation-price-btn">
@@ -6,5 +9,9 @@ function DonationPriceBtn({ price }) {
     </button>
   );
 }
+
+DonationPriceBtn.propTypes = {
+  price: PropTypes.number,
+};
 
 export default DonationPriceBtn;

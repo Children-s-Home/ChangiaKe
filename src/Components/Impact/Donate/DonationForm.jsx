@@ -1,10 +1,13 @@
 import MpesaImg from "../../../assets/mpesa.png";
 import PaypalImg from "../../../assets/paypal.png";
 import VisaImg from "../../../assets/visa.png";
-import "./Donation.css";
-import DonationPriceBtn from "./DonationPriceBtn";
+import DonationPriceBtn from "./components/DonationPriceBtn";
 import DonationCtaBtn from "./components/DonationCtaBtn";
+import DonationRadioContainer from "./components/DonationRadioContainer";
+import RadioContainer from "./components/RadioContainer";
 import Rule from "./components/Rule";
+import "./Donation.css";
+
 function DonationForm() {
   return (
     <div className="donation-form">
@@ -21,20 +24,23 @@ function DonationForm() {
         </div>
         <Rule className="hr" />
         <p className="donation-label">Frequency</p>
-        <div className="frequency-container">
-          <div className="radio-container">
-            <input type="radio" value="OneTime" name="payFrequency" />
-            <span className="radio-lbl">One Time</span>
-          </div>
-          <div className="radio-container">
-            <input type="radio" value="Monthly" name="payFrequency" />
-            <span className="radio-lbl">Monthly</span>
-          </div>
-          <div className="radio-container">
-            <input type="radio" value="Anually" name="payFrequency" />
-            <span className="radio-lbl">Anually</span>
-          </div>
-        </div>
+        <RadioContainer className="frequency-container">
+          <DonationRadioContainer
+            value={"OneTime"}
+            label={"One Time"}
+            name={"payFrequency"}
+          />
+          <DonationRadioContainer
+            value={"Monthly"}
+            label={"Monthly"}
+            name={"payFrequency"}
+          />
+          <DonationRadioContainer
+            value={"Anually"}
+            label={"Anually"}
+            name={"payFrequency"}
+          />
+        </RadioContainer>
         <Rule className="hr" />
         <p className="donation-label">Personal Details</p>
         <div className="donation-inputs-container">
@@ -52,26 +58,30 @@ function DonationForm() {
           <input className="donation-input" type="text" placeholder="Country" />
         </div>
         <p className="donation-label">Specify Donation</p>
-        <div className="donation-spec-container">
-          <div className="radio-container">
-            <input type="radio" value="OneTime" name="donationSpec" />
-            <span className="radio-lbl">Girls only Children’s home</span>
-          </div>
-          <div className="radio-container">
-            <input type="radio" value="Monthly" name="donationSpec" />
-            <span className="radio-lbl">Elderly Homes</span>
-          </div>
-          <div className="radio-container">
-            <input type="radio" value="Anually" name="donationSpec" />
-            <span className="radio-lbl">Boys only Children’s home</span>
-          </div>
-          <div className="radio-container">
-            <input type="radio" value="Anually" name="donationSpec" />
-            <span className="radio-lbl">Any Children’s home</span>
-          </div>
-        </div>
+        <RadioContainer className={"donation-spec-container"}>
+          <DonationRadioContainer
+            value={"GirlsOnly"}
+            label={"Girls only Children’s home"}
+            name={"donationSpec"}
+          />
+          <DonationRadioContainer
+            value={"Elderly"}
+            label={"Elderly Homes"}
+            name={"donationSpec"}
+          />
+          <DonationRadioContainer
+            value={"BoysOnly"}
+            label={"Boys only Children’s home"}
+            name={"donationSpec"}
+          />
+          <DonationRadioContainer
+            value={"Any"}
+            label={"Any Children’s home"}
+            name={"donationSpec"}
+          />
+        </RadioContainer>
         <DonationCtaBtn>Donate Now</DonationCtaBtn>
-      </form>
+      </form> 
       <Rule className="vr" />
       <div className="donation-form-right">
         <p className="payment-option-txt">Our payment options</p>
