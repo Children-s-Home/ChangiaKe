@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Volunteering() {
-  return (
-    <div>Volunteering</div>
-  )
+  return <div>Volunteering</div>;
 }
 
-export default Volunteering
+export default Volunteering;

@@ -16,7 +16,7 @@ function SearchResultsCard(props) {
   return (
     <div
       className="sr-card-container"
-      style={{ background: `${props.backgroundColor}` }}
+      style={{ background: `${props.backgroundColopropsr}` }}
     >
       <div
         className="sr-card-pic"
