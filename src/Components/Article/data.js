@@ -1,3 +1,4 @@
+import RelatedArticleImg from "/images/article_assets/children-in-class.png"
 const article=[
     {
         id:1,
@@ -32,4 +33,27 @@ const author_details=[
         date:"29 June 2023 • 7 min read"
     }
 ]
-export {article, author_details}
+const related_articles=[
+    {
+        id:1,
+        img:RelatedArticleImg,
+        date:"24 MARCH 2023",
+        heading:"How your Donations are making a difference",
+        author:"By Joan Wangu"
+    },
+    {
+        id:2,
+        img:RelatedArticleImg,
+        date:"24 MARCH 2023",
+        heading:"How to choose the right charity to donate to.",
+        author:"By Lilian Mudi"
+    },
+    {
+        id:3,
+        img:RelatedArticleImg,
+        date:"24 MARCH 2023",
+        heading:"Donation is not always about the money.",
+        author:"By Anthony Smith"
+    },
+]
+export {article, author_details, related_articles}
