@@ -86,8 +86,8 @@ p, h1, h2, h3, span{
 .individual-related-articles{
     display: flex;
     flex-direction: row;
-    gap: 3%;
-    margin: 30px 50px;
+    gap: 5%;
+    margin: 30px 60px;
 }
 .individual-related-articles .individual-related-article{
     background: #FCF8F4;
