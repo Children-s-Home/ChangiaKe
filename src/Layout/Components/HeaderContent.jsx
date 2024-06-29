@@ -70,13 +70,13 @@ const HeaderContent = () => {
           <Dropdown
             className='dropdown'
             trigger={['click']}
+            overlayClassName='dropdown-overlay'
             menu={{
               items,
               selectable: true,
               defaultSelectedKeys: ['home'],
             }}
             placement='bottomRight'
-            arrow={{ pointAtCenter: true }}
           >
             <RxHamburgerMenu fontSize={24} />
           </Dropdown>

@@ -37,8 +37,28 @@
                 }
             }
         }
-        .dropdown{
+        .dropdown {
             margin-left: auto;
         }
+    }
+}
+
+.dropdown-overlay {
+    li {
+        padding: 5px 20px !important;
+        color: $primary-brown !important;
+    }
+    .ant-dropdown-menu-item-selected {
+        color: $primary-black !important;
+        background: $secondary-light-brown !important;
+    }
+    li:nth-last-child(2) {
+        background: $primary-black;
+        color: $primary-white !important;
+        margin-bottom: 5px !important;
+    }
+    li:nth-last-child(1) {
+        background: $secondary-brown;
+        color: $primary-white !important;
     }
 }
