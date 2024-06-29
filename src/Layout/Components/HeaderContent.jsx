@@ -1,12 +1,15 @@
-import { ConfigProvider, Flex, Menu, Typography } from 'antd';
+import { ConfigProvider, Dropdown, Flex, Menu, Typography } from 'antd';
 import {
   primaryBlack,
   primaryBrown,
   secondaryBrown,
 } from '../../helpers/colors';
+import { useSelector } from 'react-redux';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 const { Title } = Typography;
 const HeaderContent = () => {
+  const isMobile = useSelector((state) => state.layout.isMobile.value);
   const items = [
     {
       key: 'home',
@@ -52,16 +55,32 @@ const HeaderContent = () => {
         },
       }}
     >
-      <Flex j align='center'>
+      <Flex align='center' style={{ height: '100%' }}>
         <Title level={2} style={{ margin: 0 }}>
           <span style={{ color: secondaryBrown }}>Chang</span>ia
         </Title>
-        <Menu
-          className='header-menu'
-          mode='horizontal'
-          defaultSelectedKeys={['2']}
-          items={items}
-        />
+        {!isMobile ? (
+          <Menu
+            className='header-menu'
+            mode='horizontal'
+            defaultSelectedKeys={['2']}
+            items={items}
+          />
+        ) : (
+          <Dropdown
+            className='dropdown'
+            trigger={['click']}
+            menu={{
+              items,
+              selectable: true,
+              defaultSelectedKeys: ['home'],
+            }}
+            placement='bottomRight'
+            arrow={{ pointAtCenter: true }}
+          >
+            <RxHamburgerMenu fontSize={24} />
+          </Dropdown>
+        )}
       </Flex>
     </ConfigProvider>
   );
