@@ -1,13 +1,24 @@
-import { Layout } from 'antd';
+import { ConfigProvider, Layout } from 'antd';
+import HeaderContent from './Components/HeaderContent';
 const { Header, Footer, Content } = Layout;
 
 const AppLayout = () => {
   return (
-    <Layout>
-      <Header> Header</Header>
-      <Content>Content</Content>
-      <Footer>Footer</Footer>
-    </Layout>
+    <ConfigProvider
+      theme={{
+        token: {
+          fontFamily: 'Roboto, sans-serif;',
+        },
+      }}
+    >
+      <Layout className='layout-container'>
+        <Header className='header'>
+          <HeaderContent />
+        </Header>
+        <Content>Content</Content>
+        <Footer>Footer</Footer>
+      </Layout>
+    </ConfigProvider>
   );
 };
 

@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-  }
+body::-webkit-scrollbar {
+  display: none;
+}
 
+// Reusable Styles
+$general-side-paddng: 0px 20px;

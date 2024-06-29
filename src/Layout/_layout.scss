@@ -1,0 +1,41 @@
+@import "../sass/colors";
+@import "../sass/app";
+
+%user-menu-items {
+    color: $primary-white;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.layout-container {
+    .header {
+        background: $diagonal-gradient;
+        padding: $general-side-paddng;
+        .header-menu {
+            font-weight: 550;
+            border: none;
+            flex: auto;
+            justify-content: flex-end;
+            .ant-menu-item-selected {
+                color: $primary-black;
+            }
+            li {
+                &::after {
+                    border-bottom: none;
+                }
+            }
+            li:nth-last-child(2) {
+                > span {
+                    background: $primary-black;
+                    @extend %user-menu-items;
+                }
+            }
+            li:nth-last-child(3) {
+                > span {
+                    background: $secondary-brown;
+                    @extend %user-menu-items;
+                }
+            }
+        }
+    }
+}
