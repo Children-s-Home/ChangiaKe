@@ -6,11 +6,14 @@
     padding: 5px 10px;
     border-radius: 50px;
 }
+%header-footer {
+    background: $diagonal-gradient;
+    padding: $general-side-paddng;
+}
 
 .layout-container {
     .header {
-        background: $diagonal-gradient;
-        padding: $general-side-paddng;
+        @extend %header-footer;
         .header-menu {
             font-weight: 550;
             border: none;
@@ -40,6 +43,10 @@
         .dropdown {
             margin-left: auto;
         }
+    }
+    .footer {
+        @extend %header-footer;
+        padding-top: 15px;
     }
 }
 

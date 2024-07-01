@@ -1,6 +1,7 @@
 export const primaryBrown = '#e9801f';
 export const primaryWhite = '#ffffff';
 export const primaryBlack = '#000000';
+export const primaryBlue = '#2f2e41';
 
 /* Secondary colors */
 export const secondaryBrown = '#e78124';

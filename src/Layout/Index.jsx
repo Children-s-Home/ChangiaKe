@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 const { Header, Footer, Content } = Layout;
 import { resize } from '../redux/Slices/NavSlice';
+import FooterContent from './Components/FooterContent';
 
 const AppLayout = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,9 @@ const AppLayout = () => {
           <HeaderContent />
         </Header>
         <Content>Content</Content>
-        <Footer>Footer</Footer>
+        <Footer className='footer'>
+          <FooterContent />
+        </Footer>
       </Layout>
     </ConfigProvider>
   );

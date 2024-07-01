@@ -76,6 +76,7 @@ const HeaderContent = () => {
               selectable: true,
               defaultSelectedKeys: ['home'],
             }}
+            arrow={{ pointAtCenter: true }}
             placement='bottomRight'
           >
             <RxHamburgerMenu fontSize={24} />
