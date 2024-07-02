@@ -63,18 +63,18 @@ export const navItems = [
 export const importantLinks = [
   {
     link: '',
-    title: 'Cookies Policies',
+    label: 'Cookies Policies',
   },
   {
     link: '',
-    title: 'Privacy Notice',
+    label: 'Privacy Notice',
   },
   {
     link: '',
-    title: 'Terms and Conditions',
+    label: 'Terms and Conditions',
   },
   {
     link: '',
-    title: 'Report',
+    label: 'Report',
   },
 ];

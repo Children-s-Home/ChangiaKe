@@ -36,20 +36,31 @@ const FooterContent = () => {
         },
       }}
     >
-      <Row>
+      <Row className='footer-row'>
         <Col span={isMobile ? 24 : 16} className='footer-links'>
-          <List
-            size='small'
-            split={false}
-            dataSource={navItems.slice(1,5)}
-            renderItem={(item) => <List.Item>{item.label}</List.Item>}
-          />
-          <List
-            size='small'
-            split={false}
-            dataSource={importantLinks}
-            renderItem={(item) => <List.Item>{item.title}</List.Item>}
-          />
+          {!isMobile ? (
+            <>
+              {' '}
+              <List
+                size='small'
+                split={false}
+                dataSource={navItems.slice(1, 5)}
+                renderItem={(item) => <List.Item>{item.label}</List.Item>}
+              />
+              <List
+                size='small'
+                split={false}
+                dataSource={importantLinks}
+                renderItem={(item) => <List.Item>{item.label}</List.Item>}
+              />
+            </>
+          ) : (
+            <Flex wrap gap='large' style={{ marginBottom: 15 }}>
+              {[...importantLinks].map((item) => (
+                <Text key={uuidv4()}>{item.label}</Text>
+              ))}
+            </Flex>
+          )}
         </Col>
         <Col span={isMobile ? 24 : 8} className='newsletter'>
           <Flex vertical>

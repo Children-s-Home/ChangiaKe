@@ -47,15 +47,20 @@
     .footer {
         @extend %header-footer;
         padding-top: 15px;
-        .footer-links {
-            display: flex;
-            gap: 50px;
-        }
-        .newsletter {
-            .footer-social {
-                margin-bottom: 5px;
-                &:hover {
-                    color: $primary-brown !important;
+        .footer-row {
+            @media (max-width: 768px) {
+                flex-direction: column-reverse !important;
+            }
+            .footer-links {
+                display: flex;
+                gap: 50px;
+            }
+            .newsletter {
+                .footer-social {
+                    margin-bottom: 5px;
+                    &:hover {
+                        color: $primary-brown !important;
+                    }
                 }
             }
         }
