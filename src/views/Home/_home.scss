@@ -26,6 +26,9 @@
     .home-services {
         margin: $general-full-margin;
         background: $diagonal-gradient;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
         padding: 25px 40px;
         border-radius: 30px;
         margin-top: 30px;
@@ -40,11 +43,53 @@
             background: $primary-white;
             border-radius: 20px;
             padding: 20px 10px;
-            -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
-            -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
-            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+            @extend %box-shadow;
             button {
                 margin-top: auto;
+            }
+        }
+    }
+    .testimonials {
+        margin-bottom: 40px;
+        h1 {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 30px;
+            span {
+                color: $primary-brown;
+            }
+        }
+
+        .carousel {
+              button {
+                        color: $primary-blue;
+                    }
+            .testimonial-card {
+                width: 80%;
+                flex-wrap: nowrap;
+                @media (max-width: 576px) {
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+            }
+            .slick-dots {
+                bottom: -20px;
+                li {
+                    background: $primary-brown;
+                    button {
+                        &:hover {
+                            background: $primary-blue;
+                        }
+                    }
+                }
+                .slick-active {
+                    background: $primary-blue;
+                    button {
+                        background: $primary-blue;
+                    }
+                }
             }
         }
     }
