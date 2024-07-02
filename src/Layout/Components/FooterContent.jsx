@@ -40,7 +40,7 @@ const FooterContent = () => {
         <Col span={isMobile ? 24 : 16} className='footer-links'>
           {!isMobile ? (
             <>
-              {' '}
+             
               <List
                 size='small'
                 split={false}

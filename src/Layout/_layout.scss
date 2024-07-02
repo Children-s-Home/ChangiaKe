@@ -54,6 +54,9 @@
             .footer-links {
                 display: flex;
                 gap: 50px;
+                .ant-list-item {
+                    padding: 8px 32px 8px 0px;
+                }
             }
             .newsletter {
                 .footer-social {
