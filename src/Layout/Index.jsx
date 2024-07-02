@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 const { Header, Footer, Content } = Layout;
 import { resize } from '../redux/Slices/NavSlice';
 import FooterContent from './Components/FooterContent';
+import { Outlet } from 'react-router-dom';
 
 const AppLayout = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,9 @@ const AppLayout = () => {
         <Header className='header'>
           <HeaderContent />
         </Header>
-        <Content>Content</Content>
+        <Content className='content'>
+          <Outlet />
+        </Content>
         <Footer className='footer'>
           <FooterContent />
         </Footer>

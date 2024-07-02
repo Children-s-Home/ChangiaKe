@@ -21,7 +21,7 @@ const HeaderContent = () => {
             itemBg: 'transparent',
             fontSize: 16,
             itemSelectedColor: primaryBlack,
-            fontFamily: 'DM Sans, sans-serif;',
+            fontFamily: 'DM Sans, sans-serif',
           },
         },
       }}

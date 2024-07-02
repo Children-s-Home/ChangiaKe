@@ -28,6 +28,7 @@
                 }
             }
             li:nth-last-child(2) {
+                padding-right: 0;
                 > span {
                     background: $primary-black;
                     @extend %user-menu-items;
@@ -44,6 +45,9 @@
             margin-left: auto;
         }
     }
+    .content {
+        padding: $general-side-paddng;
+    }
     .footer {
         @extend %header-footer;
         padding-top: 15px;
@@ -55,7 +59,7 @@
                 display: flex;
                 gap: 50px;
                 .ant-list-item {
-                    padding: 8px 32px 8px 0px;
+                    padding: 10px 32px 10px 0px;
                 }
             }
             .newsletter {

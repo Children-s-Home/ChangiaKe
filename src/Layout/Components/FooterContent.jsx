@@ -26,6 +26,7 @@ const FooterContent = () => {
           Button: {
             colorPrimary: primaryBrown,
             colorPrimaryHover: primaryBlack,
+            borderRadius: 50,
           },
           Input: {
             activeBorderColor: primaryBlack,
@@ -40,7 +41,6 @@ const FooterContent = () => {
         <Col span={isMobile ? 24 : 16} className='footer-links'>
           {!isMobile ? (
             <>
-             
               <List
                 size='small'
                 split={false}
@@ -96,7 +96,7 @@ const FooterContent = () => {
               </Form.Item>
               <Form.Item>
                 <Button type='primary' htmlType='submit'>
-                  Submit
+                  SUBMIT
                 </Button>
               </Form.Item>
             </Form>

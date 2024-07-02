@@ -5,7 +5,7 @@ export const primaryBlue = '#2f2e41';
 
 /* Secondary colors */
 export const secondaryBrown = '#e78124';
-export const secondaryLinks = '#c8905d';
+export const secondaryDullBrown = '#c8905d';
 export const secondaryDarkBrown = ' #eac28d';
 
 /* Gradients */
