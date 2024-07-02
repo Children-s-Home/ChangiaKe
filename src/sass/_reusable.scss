@@ -14,3 +14,14 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
+
+%heading {
+     h1 {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 30px;
+            span {
+                color: $primary-brown;
+            }
+        }
+}

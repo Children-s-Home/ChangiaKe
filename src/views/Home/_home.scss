@@ -52,15 +52,7 @@
     }
     .testimonials {
         margin-bottom: 40px;
-        h1 {
-            text-align: center;
-            margin: auto;
-            margin-bottom: 30px;
-            span {
-                color: $primary-brown;
-            }
-        }
-
+        @extend %heading;
         .carousel {
             button {
                 color: $primary-blue;
@@ -68,7 +60,7 @@
             .testimonial-card {
                 width: 80%;
                 flex-wrap: nowrap;
-                @media (max-width: 576px) {
+                @media (max-width: 670px) {
                     justify-content: center;
                     gap: 20px;
                     width: 100%;
@@ -94,4 +86,29 @@
             }
         }
     }
+    .causes {
+        @extend %heading;
+        flex-direction: column;
+        margin-bottom: 40px;
+        .cards {
+            width: 100%;
+            justify-content: center;
+
+            .causes-card {
+                flex: 1;
+                border-radius: 0px;
+
+                background: $secondary-brown;
+                @extend %box-shadow;
+
+                .donate {
+                    background: $primary-black;
+                    &:hover {
+                        background: $primary-brown;
+                    }
+                }
+            }
+        }
+    }
+
 }
