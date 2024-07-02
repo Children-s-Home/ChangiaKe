@@ -1,0 +1,96 @@
+@import "../sass/colors";
+@import "../sass/app";
+
+%user-menu-items {
+    color: $primary-white;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+%header-footer {
+    background: $diagonal-gradient;
+    padding: $general-side-paddng;
+}
+
+.layout-container {
+    .header {
+        @extend %header-footer;
+        .header-menu {
+            font-weight: 550;
+            border: none;
+            flex: auto;
+            justify-content: flex-end;
+            .ant-menu-item-selected {
+                color: $primary-black;
+            }
+            li {
+                &::after {
+                    border-bottom: none;
+                }
+            }
+            li:nth-last-child(2) {
+                padding-right: 0;
+                > span {
+                    background: $primary-black;
+                    @extend %user-menu-items;
+                }
+            }
+            li:nth-last-child(3) {
+                > span {
+                    background: $primary-brown;
+                    @extend %user-menu-items;
+                }
+            }
+        }
+        .dropdown {
+            margin-left: auto;
+        }
+    }
+    .content {
+        padding: $general-side-paddng;
+        background: $primary-white;
+    }
+    .footer {
+        @extend %header-footer;
+        padding-top: 15px;
+        .footer-row {
+            @media (max-width: 768px) {
+                flex-direction: column-reverse !important;
+            }
+            .footer-links {
+                display: flex;
+                gap: 50px;
+                .ant-list-item {
+                    padding: 10px 32px 10px 0px;
+                }
+            }
+            .newsletter {
+                .footer-social {
+                    margin-bottom: 5px;
+                    &:hover {
+                        color: $primary-brown !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-overlay {
+    li {
+        padding: 5px 20px !important;
+        color: $primary-brown !important;
+    }
+    .ant-dropdown-menu-item-selected {
+        color: $primary-black !important;
+        background: $secondary-light-brown !important;
+    }
+    li:nth-last-child(2) {
+        background: $primary-black;
+        color: $primary-white !important;
+        margin-bottom: 5px !important;
+    }
+    li:nth-last-child(1) {
+        background: $primary-brown;
+        color: $primary-white !important;
+    }
+}
