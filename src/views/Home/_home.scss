@@ -5,10 +5,25 @@
         padding: 25px 40px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+        margin-bottom: 40px;
         .hero-title {
-            font-family: DM Sans, sans-serif;
+            font-family:
+                DM Sans,
+                sans-serif;
             span {
                 color: $primary-brown;
+            }
+        }
+        .hero-photo {
+            display: flex;
+
+            .hero-image-container {
+                width: 370px;
+                margin-left: auto;
+                right: 0;
+                border-radius: 20px;
+                height: 120%;
+                background-position: center;
             }
         }
     }

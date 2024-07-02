@@ -3,6 +3,7 @@ import {
   Col,
   ConfigProvider,
   Form,
+  Image,
   Row,
   Select,
   Typography,
@@ -13,9 +14,13 @@ import {
   secondaryDullBrown,
 } from '../../../helpers/colors';
 import { BsSearch } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
+import HeroImg from '../../assets/hero.png';
 
 const { Title } = Typography;
+
 const Hero = () => {
+  const isMobile = useSelector((state) => state.layout.isMobile.value);
   return (
     <ConfigProvider
       theme={{
@@ -41,7 +46,7 @@ const Hero = () => {
       }}
     >
       <Row className='hero'>
-        <Col span={12}>
+        <Col span={isMobile ? 24 : 12}>
           <Title level={1} className='hero-title'>
             Give back <span>to your community. </span> <br />
             <span> Find a</span> childrens’ home <span> near you</span>
@@ -57,6 +62,7 @@ const Hero = () => {
               ]}
             >
               <Select
+                showSearch
                 suffixIcon={<BsSearch color={secondaryDullBrown} size={18} />}
                 size='large'
                 placeholder='Enter your address or name of the children’s home'
@@ -69,6 +75,16 @@ const Hero = () => {
               </Button>
             </Form.Item>
           </Form>
+        </Col>
+        <Col
+          className='hero-photo'
+          span={isMobile ? 24 : 12}
+          style={{ display: `${isMobile ? 'none' : 'flex'}` }}
+        >
+          <Col
+            className='hero-image-container'
+            style={{ backgroundImage: `url(${HeroImg})` }}
+          />
         </Col>
       </Row>
     </ConfigProvider>
