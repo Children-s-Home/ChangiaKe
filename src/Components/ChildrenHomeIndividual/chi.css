@@ -1,0 +1,255 @@
+/* chiBanner Component */
+.chiBanner-container {
+  background-image: url("/images/AboutUsBanner.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* chiContent Component */
+
+.chiContent-container {
+  padding: 100px 67px 57px 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* ContentSection Component */
+.content-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-section-container h1 {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cs-orange {
+  color: #e78124;
+}
+
+.content-section-container p {
+  color: #000;
+  text-align: justify;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 192.308% */
+}
+
+/* Need Component */
+.need-container {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+  width: 100%;
+}
+
+.need-container h1 {
+  color: #e78124;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.needs-part {
+  padding: 78px 67px 40px 67px;
+  background: linear-gradient(180deg, #eab98d 0%, #ffead7 100%);
+  width: 100%;
+  display: flex;
+  gap: 47px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.needs-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.needs-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.needs-card-image {
+  padding: 45px 11px 77px;
+  width: 211px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.needs-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.needs-card-container h1 {
+  color: #151212;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.support-button {
+  color: #fff;
+  font-family: Changa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  padding: 0px 10px;
+  border-radius: 50px;
+  background: #000;
+  border: none;
+}
+
+/* Leadership Component */
+.leadership-container {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  padding: 83px 67px 39px 67px;
+  align-items: center;
+}
+
+.leadership-container h1 {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+}
+
+.leadership-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* LeadershipCard Component */
+
+.leadership-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.leader-image {
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 180px;
+  height: 250px;
+}
+
+.leadership-card-container h1 {
+  color: #151212;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 158.333% */
+}
+
+.leadership-card-container h2 {
+  color: #e78124;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px; /* 172.727% */
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 79px;
+  align-items: center;
+  width: 100%;
+  padding: 0px 67px;
+}
+
+.gallery-container h1 {
+  color: #e78124;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.gallery-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-nav-buttons {
+  display: flex;
+  gap: 174px;
+}
+
+.gallery-nav-buttons button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #E78124;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* IndividualSlide Component */
+.gallery-slide {
+  width: 349px;
+  height: 270px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

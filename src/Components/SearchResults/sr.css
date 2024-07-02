@@ -1,0 +1,235 @@
+/* Search bar */
+.sb-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 67px 38px 67px;
+}
+.sb-content {
+  display: flex;
+  height: 51px;
+}
+
+.sb-container input {
+  display: flex;
+  width: 460px;
+  padding: 6px 12px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border: 0.3px solid #000;
+  background: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.sb-container input::placeholder {
+  color: #a7a3a3;
+}
+
+.sb-container button {
+  background: #e78124;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+}
+
+.sb-container button img {
+  height: 29px;
+  width: 29px;
+}
+
+/* SearchResultsBody  */
+
+.sr-body-container {
+  display: flex;
+  gap: 49px;
+  padding: 0px 67px 59px 67px;
+}
+
+.sr-body-filters-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.sr-body-filters-container hr {
+  height: 1px;
+  background: #e78124;
+  border: none;
+}
+
+.sr-body-filters-container h1 {
+  margin-top: 16px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 204.545% */
+}
+
+.sr-body-filters-container input {
+  border-radius: 42px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #a7a3a3;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 300% */
+  text-align: left;
+  padding-left: 18px;
+  margin-top: 22px;
+}
+
+.sr-body-filters-container h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 204.545% */
+  margin-top: 34px;
+}
+
+.filters-section {
+  margin-top: 19px;
+  margin-bottom: 25px;
+}
+
+.sr-body-filters-container button {
+  margin-top: 42px;
+  border: none;
+  border-radius: 42px;
+  background: #e78124;
+  align-self: flex-start;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 195.652% */
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+
+
+.sr-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+
+
+
+/* SearchResultsFilters */
+
+.sr-filters-container li {
+  margin-bottom: 19px;
+}
+
+.sr-filters-container ul {
+  list-style: none;
+}
+
+.sr-filters-container label {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+input[type="checkbox"] {
+  margin: 0; /* Reset margin for the checkbox */
+  border: 1px solid #000;
+  background: #fff;
+  height: 18px;
+  width: 18px;
+}
+
+
+
+
+
+
+/* Search Results Card */
+.sr-card-container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 267px;
+  border-radius: 20px;
+  background: #ffead7;
+  margin-bottom: 45px;
+}
+
+.sr-card-pic {
+  width: 100%;
+  height: 144px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.sr-card-container h1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sr-card-loaction {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.sr-card-container h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sr-card-container p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.sr-card-container button {
+  border-radius: 42px;
+  background: #000;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  align-self: flex-start;
+  padding: 4px 12px;
+  cursor: pointer;
+}
