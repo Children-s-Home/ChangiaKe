@@ -4,6 +4,7 @@ import HomeAbout from './Components/HomeAbout';
 import HomeServices from './Components/HomeServices';
 import Testimonials from './Components/Testimonials';
 import Causes from './Components/Causes';
+import HomeBlog from './Components/HomeBlog';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeServices />
       <Testimonials />
       <Causes />
+      <HomeBlog />
     </Flex>
   );
 };

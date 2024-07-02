@@ -110,5 +110,8 @@
             }
         }
     }
+    .home-blog {
+        @extend %heading;
+    }
 
 }
