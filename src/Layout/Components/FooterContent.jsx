@@ -6,12 +6,15 @@ import {
   Form,
   Input,
   Row,
+  Tooltip,
   Typography,
 } from 'antd';
 import { useSelector } from 'react-redux';
 import { primaryBlack, primaryBlue, primaryBrown } from '../../helpers/colors';
+import { socialLinks } from '../layoutData';
+import { v4 as uuidv4 } from 'uuid';
 
-const { Text, Title } = Typography;
+const { Text, Title, Link } = Typography;
 
 const FooterContent = () => {
   const isMobile = useSelector((state) => state.layout.isMobile.value);
@@ -22,6 +25,12 @@ const FooterContent = () => {
           Button: {
             colorPrimary: primaryBrown,
             colorPrimaryHover: primaryBlack,
+          },
+          Input: {
+            activeBorderColor: primaryBlack,
+            hoverBorderColor: primaryBlack,
+            borderRadius: 50,
+            colorBorder: primaryBrown,
           },
         },
       }}
@@ -55,7 +64,10 @@ const FooterContent = () => {
                   },
                 ]}
               >
-                <Input placeholder='Enter your email' />
+                <Input
+                  placeholder='Enter your email'
+                  style={{ borderWidth: 2 }}
+                />
               </Form.Item>
               <Form.Item>
                 <Button type='primary' htmlType='submit'>
@@ -63,8 +75,24 @@ const FooterContent = () => {
                 </Button>
               </Form.Item>
             </Form>
+            <Flex gap={60}>
+              {socialLinks.map((item) => (
+                <Tooltip key={uuidv4()} title={item.title}>
+                  <Link
+                    className='footer-social'
+                    style={{
+                      fontSize: 20,
+                      color: primaryBlack,
+                    }}
+                    href={item.link}
+                    target='_blank'
+                  >
+                    {item.icon}
+                  </Link>
+                </Tooltip>
+              ))}
+            </Flex>
           </Flex>
-          <Flex></Flex>
         </Col>
       </Row>
     </ConfigProvider>

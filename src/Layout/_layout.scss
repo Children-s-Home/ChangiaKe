@@ -47,6 +47,14 @@
     .footer {
         @extend %header-footer;
         padding-top: 15px;
+        .newsletter {
+            .footer-social {
+                margin-bottom: 5px;
+                &:hover {
+                    color: $primary-brown !important;
+                }
+            }
+        }
     }
 }
 
