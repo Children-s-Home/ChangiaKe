@@ -23,11 +23,6 @@ const FooterContent = () => {
     <ConfigProvider
       theme={{
         components: {
-          Button: {
-            colorPrimary: primaryBrown,
-            colorPrimaryHover: primaryBlack,
-            borderRadius: 50,
-          },
           Input: {
             activeBorderColor: primaryBlack,
             hoverBorderColor: primaryBlack,

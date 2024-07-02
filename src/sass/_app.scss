@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  h1, h2, h3, h4, h5, h6 {
+  font-family:   DM Sans,
+                sans-serif !important; /* Replace with your desired font family */
+}
 }
 
 html {
@@ -14,3 +18,4 @@ body::-webkit-scrollbar {
 
 // Reusable Styles
 $general-side-paddng: 0px 40px;
+$general-full-margin: 0px -40px;

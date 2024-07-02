@@ -6,6 +6,7 @@ const { Header, Footer, Content } = Layout;
 import { resize } from '../redux/Slices/NavSlice';
 import FooterContent from './Components/FooterContent';
 import { Outlet } from 'react-router-dom';
+import { primaryBlack, primaryBrown } from '../helpers/colors';
 
 const AppLayout = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,13 @@ const AppLayout = () => {
       theme={{
         token: {
           fontFamily: 'Roboto, sans-serif;',
+        },
+        components: {
+          Button: {
+            colorPrimary: primaryBrown,
+            colorPrimaryHover: primaryBlack,
+            borderRadius: 50,
+          },
         },
       }}
     >
