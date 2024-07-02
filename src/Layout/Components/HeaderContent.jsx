@@ -6,40 +6,11 @@ import {
 } from '../../helpers/colors';
 import { useSelector } from 'react-redux';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { navItems } from '../layoutData';
 
 const { Title } = Typography;
 const HeaderContent = () => {
   const isMobile = useSelector((state) => state.layout.isMobile.value);
-  const items = [
-    {
-      key: 'home',
-      label: 'Home',
-    },
-    {
-      key: 'about-us',
-      label: 'About Us',
-    },
-    {
-      key: 'discover',
-      label: 'Discover',
-    },
-    {
-      key: 'services',
-      label: 'Services',
-    },
-    {
-      key: 'blog',
-      label: 'Blog',
-    },
-    {
-      key: 'sign-up',
-      label: 'Sign Up',
-    },
-    {
-      key: 'sign-in',
-      label: 'Sign In',
-    },
-  ];
 
   return (
     <ConfigProvider
@@ -64,7 +35,7 @@ const HeaderContent = () => {
             className='header-menu'
             mode='horizontal'
             defaultSelectedKeys={['2']}
-            items={items}
+            items={navItems}
           />
         ) : (
           <Dropdown
@@ -72,7 +43,7 @@ const HeaderContent = () => {
             trigger={['click']}
             overlayClassName='dropdown-overlay'
             menu={{
-              items,
+              items: navItems,
               selectable: true,
               defaultSelectedKeys: ['home'],
             }}

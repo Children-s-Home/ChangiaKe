@@ -5,13 +5,14 @@ import {
   Flex,
   Form,
   Input,
+  List,
   Row,
   Tooltip,
   Typography,
 } from 'antd';
 import { useSelector } from 'react-redux';
 import { primaryBlack, primaryBlue, primaryBrown } from '../../helpers/colors';
-import { socialLinks } from '../layoutData';
+import { importantLinks, navItems, socialLinks } from '../layoutData';
 import { v4 as uuidv4 } from 'uuid';
 
 const { Text, Title, Link } = Typography;
@@ -36,7 +37,20 @@ const FooterContent = () => {
       }}
     >
       <Row>
-        <Col span={isMobile ? 24 : 16}></Col>
+        <Col span={isMobile ? 24 : 16} className='footer-links'>
+          <List
+            size='small'
+            split={false}
+            dataSource={navItems.slice(1,5)}
+            renderItem={(item) => <List.Item>{item.label}</List.Item>}
+          />
+          <List
+            size='small'
+            split={false}
+            dataSource={importantLinks}
+            renderItem={(item) => <List.Item>{item.title}</List.Item>}
+          />
+        </Col>
         <Col span={isMobile ? 24 : 8} className='newsletter'>
           <Flex vertical>
             <Title level={4} style={{ fontWeight: '500', color: primaryBlue }}>

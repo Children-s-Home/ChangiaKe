@@ -28,3 +28,53 @@ export const socialLinks = [
     title: 'Linked In',
   },
 ];
+
+export const navItems = [
+  {
+    key: 'home',
+    label: 'Home',
+  },
+  {
+    key: 'about-us',
+    label: 'About Us',
+  },
+  {
+    key: 'discover',
+    label: 'Discover',
+  },
+  {
+    key: 'services',
+    label: 'Services',
+  },
+  {
+    key: 'blog',
+    label: 'Blog',
+  },
+  {
+    key: 'sign-up',
+    label: 'Sign Up',
+  },
+  {
+    key: 'sign-in',
+    label: 'Sign In',
+  },
+];
+
+export const importantLinks = [
+  {
+    link: '',
+    title: 'Cookies Policies',
+  },
+  {
+    link: '',
+    title: 'Privacy Notice',
+  },
+  {
+    link: '',
+    title: 'Terms and Conditions',
+  },
+  {
+    link: '',
+    title: 'Report',
+  },
+];
