@@ -113,5 +113,18 @@
     .home-blog {
         @extend %heading;
         margin-bottom: 40px;
+        .card-container {
+            @extend %box-shadow;
+            .card-content {
+                flex: 1;
+                h4 {
+                    color: $primary-brown;
+                }
+            }
+        }
+        .card-pic {
+            background-position: center;
+            background-size: cover;
+        }
     }
 }

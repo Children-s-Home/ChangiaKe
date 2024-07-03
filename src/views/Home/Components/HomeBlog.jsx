@@ -2,7 +2,6 @@ import { Col, Flex, List, Row, Typography } from 'antd';
 import { blog } from '../HomeData/blog';
 import { primaryBrown, secondaryDullBrown } from '../../../helpers/colors';
 import { IoIosHeartEmpty } from 'react-icons/io';
-import blogPic from '../assets/blogpic.jpeg';
 import { useSelector } from 'react-redux';
 
 const { Title, Link, Paragraph, Text } = Typography;
@@ -17,29 +16,20 @@ const HomeBlog = () => {
       <Row gutter={isMobile ? [0, 20] : 20}>
         <Col span={isMobile ? 24 : 13}>
           <Row className='card-container' gutter={20}>
-            <Col
-              vertical
-              className='card-content'
-              md={14}
-              sm={24}
-              style={{ flex: 1 }}
-            >
-              <Title level={4} style={{ color: primaryBrown }}>
-                {blog[0].title}
-              </Title>
+            <Col vertical className='card-content' md={14} sm={24}>
+              <Title level={4}>{blog[0].title}</Title>
               <Paragraph>{blog[0].description}</Paragraph>
               <Text style={{ color: secondaryDullBrown }}>
                 <IoIosHeartEmpty /> 3 Likes
               </Text>
             </Col>
             <Col
+              className='card-pic'
               md={10}
               sm={0}
               xs={0}
               style={{
                 backgroundImage: blog[0]?.pic ? `url(${blog[0].pic})` : 'none',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
               }}
             />
           </Row>
