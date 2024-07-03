@@ -12,6 +12,7 @@
 }
 
 .layout-container {
+    min-height: 100vh;
     .header {
         @extend %header-footer;
         .header-menu {
@@ -48,6 +49,7 @@
     .content {
         padding: $general-side-paddng;
         background: $primary-white;
+        flex: 1;
     }
     .footer {
         @extend %header-footer;

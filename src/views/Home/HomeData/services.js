@@ -1,6 +1,6 @@
-import donator from '../../assets/Donator.png';
-import fundraiser from '../../assets/fundraiser.png';
-import volunteer from '../../assets/volunteer.png';
+import donator from '../assets/Donator.png';
+import fundraiser from '../assets/fundraiser.png';
+import volunteer from '../assets/volunteer.png';
 
 export const services = [
   {

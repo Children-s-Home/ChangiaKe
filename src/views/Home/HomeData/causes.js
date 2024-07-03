@@ -1,6 +1,6 @@
-import pic1 from '../../assets/pexels-pixabay-45842 1.png'
-import pic2 from '../../assets/pexels-rdne-stock-project-8581019 1.png'
-import pic3 from '../../assets/pexels-pixabay-45842 3.png'
+import pic1 from '../assets/pexels-pixabay-45842 1.png';
+import pic2 from '../assets/pexels-rdne-stock-project-8581019 1.png';
+import pic3 from '../assets/pexels-pixabay-45842 3.png';
 
 export const causes = [
   {

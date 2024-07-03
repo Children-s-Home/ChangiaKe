@@ -15,7 +15,7 @@ import {
 } from '../../../helpers/colors';
 import { BsSearch } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import HeroImg from '../../assets/hero.png';
+import HeroImg from '../assets/hero.png';
 
 const { Title } = Typography;
 
