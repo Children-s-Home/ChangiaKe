@@ -29,13 +29,7 @@ const Testimonials = () => {
         </Title>
 
         <Col>
-          <Carousel
-            
-            className='carousel'
-            infinite
-            autoplay
-            autoplaySpeed={7000}
-          >
+          <Carousel className='carousel' infinite autoplay autoplaySpeed={7000}>
             {testimonials.map((item) => (
               <div key={uuiv4()}>
                 <Flex justify='center'>
@@ -46,9 +40,14 @@ const Testimonials = () => {
                     <Col flex='auto'>
                       <Flex vertical>
                         <Paragraph>{item.paragraph}</Paragraph>
-                        <Text style={{ color: secondaryDullBrown }}>
-                          {' '}
-                          {item.name}{' '}
+                        <Text
+                          style={{
+                            color: secondaryDullBrown,
+                            fontWeight: 600,
+                            
+                          }}
+                        >
+                          {item.name}
                         </Text>
                       </Flex>
                     </Col>

@@ -26,6 +26,8 @@ const AppLayout = () => {
       theme={{
         token: {
           fontFamily: 'Roboto, sans-serif;',
+          fontSize: 16,
+          lineHeight: 1.8
         },
         components: {
           Button: {
