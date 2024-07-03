@@ -1,0 +1,15 @@
+.about-container {
+    margin-top: 30px;
+    .about-us-content {
+        @extend %heading;
+        .paragraph {
+            .photo {
+                background-position: center;
+                background-size: cover;
+                border-radius: 20px;
+                min-height: 240px;
+                margin-left: auto;
+            }
+        }
+    }
+}

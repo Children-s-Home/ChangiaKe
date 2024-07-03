@@ -7,10 +7,16 @@ import {
 import { useSelector } from 'react-redux';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { navItems } from '../layoutData';
+import useRouting from '../../hooks/useRouting';
 
 const { Title } = Typography;
 const HeaderContent = () => {
+  const { navigateTo } = useRouting();
+
   const isMobile = useSelector((state) => state.layout.isMobile.value);
+  const handleClick = (e) => {
+    navigateTo(e.key);
+  };
 
   return (
     <ConfigProvider
@@ -36,6 +42,7 @@ const HeaderContent = () => {
             mode='horizontal'
             defaultSelectedKeys={['2']}
             items={navItems}
+            onClick={handleClick}
           />
         ) : (
           <Dropdown
@@ -45,6 +52,7 @@ const HeaderContent = () => {
             menu={{
               items: navItems,
               selectable: true,
+              onClick: handleClick,
               defaultSelectedKeys: ['home'],
             }}
             arrow={{ pointAtCenter: true }}
