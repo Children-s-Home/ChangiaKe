@@ -11,7 +11,7 @@ const HomeAbout = () => {
         {item.title.split(' ')[0]}
         <span style={{ color: primaryBrown }}> {item.title.split(' ')[1]}</span>
       </Title>
-      <Paragraph style={{ fontSize: 16 }}>{item.paragraph}</Paragraph>
+      <Paragraph>{item.paragraph}</Paragraph>
     </Col>
   ));
 };

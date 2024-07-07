@@ -13,7 +13,7 @@ const AboutContent = () => {
       </Title>
       <Row className='paragraph'>
         <Col className='p' span={isMobile ? 24 : 12}>
-          <Paragraph style={{ fontSize: 16 }}>{about}</Paragraph>
+          <Paragraph >{about}</Paragraph>
         </Col>
         <Col
           span={isMobile ? 24 : 11}

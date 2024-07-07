@@ -25,7 +25,7 @@ const HeaderContent = () => {
           Menu: {
             colorText: primaryBrown,
             itemBg: 'transparent',
-            fontSize: 16,
+           
             itemSelectedColor: primaryBlack,
             fontFamily: 'DM Sans, sans-serif',
           },
