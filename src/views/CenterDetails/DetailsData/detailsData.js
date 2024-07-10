@@ -1,7 +1,10 @@
-import clothes from '../assets/clothes.png'
+import clothes from '../assets/clothes.png';
 import cereals from '../assets/cereals.png';
 import mentor from '../assets/mentor.png';
 import toileteries from '../assets/toileteries.png';
+import anne from '../assets/anne.jpg';
+import stacy from '../assets/stacy.jpg';
+import makena from '../assets/makena.jpg';
 
 export const about = [
   {
@@ -37,5 +40,23 @@ export const needs = [
   {
     icon: toileteries,
     title: 'Toileteries',
+  },
+];
+
+export const leaders = [
+  {
+    img: makena,
+    name: 'Njeri Makena',
+    designation: 'House Matron',
+  },
+  {
+    img: anne,
+    name: 'Anne Marie',
+    designation: 'Coordianator',
+  },
+  {
+    img: stacy,
+    name: 'Stacy Chanzu',
+    designation: 'Manager',
   },
 ];

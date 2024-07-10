@@ -76,4 +76,28 @@
         }
 
     }
+
+    .leadership {
+        @extend %heading;
+        margin-top: 30px;
+
+        .leader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                margin-bottom: 0;
+            }
+
+            span {
+                color: $primary-brown;
+            }
+        }
+    }
+
+    .gallery-container {
+        @extend %heading;
+        margin-top: 30px;
+    }
 }

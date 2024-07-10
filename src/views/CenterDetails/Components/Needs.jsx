@@ -8,13 +8,20 @@ const Needs = () => {
   return (
     <Flex className='needs' vertical>
       <Title>
-        <span>What we </span>
-        need
+        What we
+        <span> need </span>
       </Title>
 
       <Row className='banner' gutter={[24, 24]}>
         {needs.map((need) => (
-          <Col key={uuidv4()} lg={6} md={6} sm={12} xs={24} className='need-card'>
+          <Col
+            key={uuidv4()}
+            lg={6}
+            md={6}
+            sm={12}
+            xs={12}
+            className='need-card'
+          >
             <div className='img-div'>
               <img src={need.icon} alt='' />
             </div>
