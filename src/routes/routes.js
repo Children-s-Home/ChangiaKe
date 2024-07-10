@@ -5,6 +5,7 @@ import Home from '../views/Home/Index';
 import AboutUs from '../views/AboutUs/Index';
 import Discover from '../views/Discover/Index';
 import Details from '../views/CenterDetails/Index'
+import Services from '../views/Services/Index'
 
 export const routes = [
   {
@@ -31,6 +32,10 @@ export const routes = [
         path: 'details/:id',
         element: React.createElement(Details),
       },
+      {
+        path: 'services',
+        element: React.createElement(Services)
+      }
     ],
   },
 ];
