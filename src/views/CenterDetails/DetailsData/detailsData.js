@@ -5,6 +5,9 @@ import toileteries from '../assets/toileteries.png';
 import anne from '../assets/anne.jpg';
 import stacy from '../assets/stacy.jpg';
 import makena from '../assets/makena.jpg';
+import first from '../assets/27d85ac8c6c0c352c3fd45e7b6ec7af7.jpg'
+import second from '../assets/8992f0f199d2ab2008cbacf516cbd4a3.jpeg'
+import third from '../assets/eca27327770576c0035fa4a181cb3249.jpeg'
 
 export const about = [
   {
@@ -60,3 +63,5 @@ export const leaders = [
     designation: 'Manager',
   },
 ];
+
+export const gallery = [first, second, third]

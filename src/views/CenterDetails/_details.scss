@@ -99,5 +99,7 @@
     .gallery-container {
         @extend %heading;
         margin-top: 30px;
+        margin-bottom: 30px;
+        @include images('', 300px, "pics", '');
     }
 }
