@@ -4,7 +4,7 @@
 
     align-items: center;
     .search {
-        width: 550px;
+        max-width: 550px;
     }
     .discover-content {
         width: 100%;
@@ -17,15 +17,28 @@
         }
         .cards {
             width: 100%;
-
+            margin: 0 !important;
             .causes-card {
                 flex: 1;
-                background: $secondary-brown;
+                background: $secondary-light-brown;
+                padding: 15px;
+                .ant-card-body{
+                    padding: 10px 0px 0px 0px;
+                }
                 .donate {
                     background: $primary-black;
                     &:hover {
                         background: $primary-brown;
                     }
+                }
+                &[data-status="Donate"] {
+                    background: $secondary-brown;
+                      .donate {
+                    background: $primary-brown;
+                    &:hover {
+                        background: $primary-black;
+                    }
+                }
                 }
 
                 @include images(100%, 150px, "ant-card-cover", 180px);

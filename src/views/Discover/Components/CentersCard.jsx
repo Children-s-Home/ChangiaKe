@@ -9,9 +9,21 @@ const CentersCard = () => {
   return (
     <Row className='cards' gutter={[20, 20]}>
       {centers.map((item) => (
-        <Col key={uuidv4()} span={8}>
+        <Col
+          key={uuidv4()}
+          lg={12}
+          xl={8}
+          md={12}
+          sm={24}
+        >
           <Card
-            cover={<img alt='example' src={item.img} />}
+            data-status={item.button}
+            cover={
+              <img
+                alt='example'
+                src={`/images/Search Results/${item.img}.png`}
+              />
+            }
             className='causes-card'
             bordered={false}
           >
@@ -19,7 +31,7 @@ const CentersCard = () => {
             <Text>
               <CiLocationOn /> {item.location}
             </Text>
-            <Title level={5}>{item.title}</Title>
+
             <Paragraph>{item.text}</Paragraph>
             <Flex justify='space-between'>
               <Button type='primary' className='donate'>
