@@ -25,7 +25,7 @@ const Testimonials = () => {
     >
       <Row className='testimonials'>
         <Title>
-          <span>Testimonials </span>from the volunteers
+        <span>Testimonials </span>from the volunteers
         </Title>
 
         <Col>
@@ -44,7 +44,6 @@ const Testimonials = () => {
                           style={{
                             color: secondaryDullBrown,
                             fontWeight: 600,
-                            
                           }}
                         >
                           {item.name}

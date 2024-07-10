@@ -4,7 +4,7 @@ import { redirect } from 'react-router-dom';
 import Home from '../views/Home/Index';
 import AboutUs from '../views/AboutUs/Index';
 import Discover from '../views/Discover/Index';
-import Details from '../views/Discover/Components/Details';
+import Details from '../views/CenterDetails/Index'
 
 export const routes = [
   {

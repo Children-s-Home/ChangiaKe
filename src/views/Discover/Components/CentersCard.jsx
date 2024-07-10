@@ -37,7 +37,7 @@ const CentersCard = () => {
               <Tooltip title='See details'>
                 <Button
                   type='Link'
-                  onClick={() => navigateTo('details/1')}
+                  onClick={() => navigateTo('/details/1')}
                   style={{ fontSize: 16 }}
                 >
                   <HiOutlineExternalLink />
