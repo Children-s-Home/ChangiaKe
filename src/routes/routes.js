@@ -2,8 +2,10 @@ import React from 'react';
 import AppLayout from '../Layout/Index';
 import { redirect } from 'react-router-dom';
 import Home from '../views/Home/Index';
-import { element } from 'prop-types';
 import AboutUs from '../views/AboutUs/Index';
+import Discover from '../views/Discover/Index';
+import Details from '../views/CenterDetails/Index'
+import Services from '../views/Services/Index'
 
 export const routes = [
   {
@@ -12,16 +14,28 @@ export const routes = [
     children: [
       {
         index: true,
-        loader: async () => redirect('home') 
+        loader: async () => redirect('home'),
       },
       {
         path: 'home',
-        element: React.createElement(Home)
+        element: React.createElement(Home),
       },
       {
         path: 'about-us',
-        element: React.createElement(AboutUs)
+        element: React.createElement(AboutUs),
+      },
+      {
+        path: 'discover',
+        element: React.createElement(Discover),
+      },
+      {
+        path: 'details/:id',
+        element: React.createElement(Details),
+      },
+      {
+        path: 'services',
+        element: React.createElement(Services)
       }
-    ]
+    ],
   },
 ];

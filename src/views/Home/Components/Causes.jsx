@@ -15,7 +15,7 @@ const Causes = () => {
         {causes.slice(0, 3).map((item) => (
           <Card
             key={uuidv4()}
-            cover={<img alt='example' height={170} src={item.pic} />}
+            cover={<img alt='example' src={item.pic} />}
             className='causes-card'
             bordered={false}
           >

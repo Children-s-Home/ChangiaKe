@@ -1,0 +1,107 @@
+.details-container {
+    @include images('', 250px, "hero", '');
+
+    .hero {
+        margin: $general-full-margin;
+        margin-bottom: 30px;
+        position: relative;
+
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Dark overlay with 50% opacity */
+        }
+
+        .title {
+            color: $secondary-light-brown;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+
+        }
+
+    }
+
+    .needs {
+        @extend %heading;
+        margin-top: 10px;
+
+        .banner {
+            margin: $general-full-margin !important;
+            padding: $general-side-paddng;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background: $diagonal-gradient;
+            justify-content: center;
+
+
+            button {
+                background: $primary-black;
+            }
+
+            .need-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .img-div {
+                    width: 100%;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @extend %box-shadow;
+                    border-radius: 10px;
+
+                    background: $primary-white;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .leadership {
+        @extend %heading;
+        margin-top: 30px;
+
+        .leader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                margin-bottom: 0;
+            }
+
+            span {
+                color: $primary-brown;
+            }
+        }
+    }
+
+    .gallery-container {
+        @extend %heading;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include images('', 300px, "pics", '');
+    }
+
+
+}

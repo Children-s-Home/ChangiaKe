@@ -8,7 +8,7 @@ import HomeBlog from './Components/HomeBlog';
 
 const Home = () => {
   return (
-  <Flex vertical className='home-container'>
+    <Flex vertical className='home-container'>
       <Hero />
       <HomeAbout />
       <HomeServices />

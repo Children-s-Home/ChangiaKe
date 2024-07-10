@@ -1,3 +1,6 @@
+@use "../../sass/reusable" as *;
+@use "../../sass/variables" as *;
+
 .home-container {
     .hero {
         background: $diagonal-gradient;
@@ -107,6 +110,8 @@
                         background: $primary-brown;
                     }
                 }
+
+                @include images(100%, 170px, "ant-card-cover", 180px);
             }
         }
     }
