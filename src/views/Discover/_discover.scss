@@ -1,0 +1,35 @@
+.discover-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    align-items: center;
+    .search {
+        width: 550px;
+    }
+    .discover-content {
+        width: 100%;
+        .filter {
+            .checkboxes {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+        }
+        .cards {
+            width: 100%;
+
+            .causes-card {
+                flex: 1;
+                background: $secondary-brown;
+                .donate {
+                    background: $primary-black;
+                    &:hover {
+                        background: $primary-brown;
+                    }
+                }
+
+                @include images(100%, 150px, "ant-card-cover", 180px);
+            }
+        }
+    }
+}

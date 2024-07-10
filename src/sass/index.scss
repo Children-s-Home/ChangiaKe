@@ -1,5 +1,8 @@
+@use "variables" as *;
+@use "reusable" as *;
+
 @import "../Layout/layout";
 @import "./app";
 @import "../views/Home/home";
-@import "./reusable";
 @import "../views/AboutUs/aboutUs";
+@import "../views/Discover/discover";

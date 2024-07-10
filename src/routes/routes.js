@@ -4,6 +4,7 @@ import { redirect } from 'react-router-dom';
 import Home from '../views/Home/Index';
 import { element } from 'prop-types';
 import AboutUs from '../views/AboutUs/Index';
+import Discover from '../views/Discover/Index';
 
 export const routes = [
   {
@@ -21,6 +22,10 @@ export const routes = [
       {
         path: 'about-us',
         element: React.createElement(AboutUs)
+      },
+      {
+        path: 'discover',
+        element: React.createElement(Discover)
       }
     ]
   },
