@@ -18,7 +18,7 @@ const CentersCard = () => {
             cover={
               <img
                 alt='example'
-                src={`/images/Search Results/${item.img}.png`}
+                src={`/images/${item.img}.jpg`}
               />
             }
             className='causes-card'
