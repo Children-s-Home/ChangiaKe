@@ -1,22 +1,25 @@
 import { ConfigProvider, Tabs } from 'antd';
 import { primaryBrown } from '../../../helpers/colors/';
+import Donation from './Donation';
+import Volunteering from './Volunteering';
+import Fundraising from './Fundraising';
 
 const ServicesContent = () => {
   const items = [
     {
       key: 'Donation',
       label: 'Donation',
-      children: 'Content of Tab Pane 1',
+      children: <Donation />,
     },
     {
       key: 'Volunteering',
       label: 'Volunteering',
-      children: 'Content of Tab Pane 2',
+      children: <Volunteering />,
     },
     {
       key: 'Fundraising',
       label: 'Fundraising',
-      children: 'Content of Tab Pane 3',
+      children: <Fundraising />,
     },
   ];
   return (
