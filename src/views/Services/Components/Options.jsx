@@ -3,7 +3,6 @@ import paypal from '../assets/paypal.png'
 import mpesa from '../assets/download.png'
 import visa from '../assets/visa.png';
 
-const {Title} = Typography
 const Options = () => {
   return (
     <Flex wrap gap={'large'}  align='middle' justify='center'>
