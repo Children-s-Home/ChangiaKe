@@ -1,6 +1,7 @@
 import { Col, Flex, Row, Typography } from 'antd';
 import { donation } from '../data/ServicesData';
 import DonationForm from './DonationForm';
+import Options from './Options';
 
 const { Paragraph, Text } = Typography;
 
@@ -12,8 +13,8 @@ const Donation = () => {
         <Col md={14} sm={24} className='action-section'>
           <DonationForm />
         </Col>
-        <Col md={10} sm={24} >
-        HEllo
+        <Col md={10} sm={24} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+          <Options />
         </Col>
       </Row>
     </Flex>
