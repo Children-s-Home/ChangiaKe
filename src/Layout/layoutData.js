@@ -51,11 +51,11 @@ export const navItems = [
     label: 'Blog',
   },
   {
-    key: 'sign-up',
+    key: 'auth/sign-up',
     label: 'Sign Up',
   },
   {
-    key: 'sign-in',
+    key: 'auth/sign-in',
     label: 'Sign In',
   },
 ];

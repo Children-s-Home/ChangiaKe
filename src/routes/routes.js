@@ -6,6 +6,7 @@ import AboutUs from '../views/AboutUs/Index';
 import Discover from '../views/Discover/Index';
 import Details from '../views/CenterDetails/Index'
 import Services from '../views/Services/Index'
+import Auth from '@/views/Auth/Index';
 
 export const routes = [
   {
@@ -35,6 +36,10 @@ export const routes = [
       {
         path: 'services',
         element: React.createElement(Services)
+      }, 
+      {
+        path: 'auth/:type',
+        element: React.createElement(Auth)
       }
     ],
   },
