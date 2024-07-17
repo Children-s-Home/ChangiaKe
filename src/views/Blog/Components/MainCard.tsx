@@ -12,7 +12,7 @@ const MainCard : React.FC <BlogCard> = ({blogImg, summary , duration, title  }) 
 		 <Card
             key={uuidv4()}
             cover={<img alt='example' src={blogImg} />}
-            className='causes-card'
+            className='blog-main-card'
             bordered={false}
 
           >

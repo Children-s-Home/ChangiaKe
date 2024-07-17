@@ -13,8 +13,8 @@ const BlogCardSmall : React.FC <BlogCard> = ({blogImg, title , date , author  })
 			<div className ={'blog-img'}>
 				<img src={blogImg} alt={''} />
 			</div>
-		<Text> {date.toUpperCase} </Text>
-	<Title level={4} style ={{ color: primaryBrown}}> {title} </Title >
+		<Text style={{fontWeight: 300 , marginTop: '5px', fontSize: 12}} > {date.toUpperCase()} </Text>
+		<Title level={4} style ={{ color: primaryBrown , marginTop: '5px' , marginBottom: '5px'}}> {title} </Title >
 		<Text > By {author} < /Text>
 		</Flex>
 	)

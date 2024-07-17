@@ -5,7 +5,7 @@ interface BlogCard {
 	blogImg: string;
 	title: string;
 	summary?: string;
-	date?: Date | string;
+	date?:  string;
 	author?: string;
 	duration?: string;
 }
