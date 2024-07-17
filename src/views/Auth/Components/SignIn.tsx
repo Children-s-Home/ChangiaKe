@@ -10,7 +10,7 @@ const { Title, Text, Link } = Typography;
 const SignIn: React.FC = () => {
   const { navigateTo } = useRouting();
   return (
-    <Row className="sign-in">
+    <Row className="sign-in" >
       <Col span={12} className="sign-in-pic">
         <img src={signIn} alt="" />
       </Col>

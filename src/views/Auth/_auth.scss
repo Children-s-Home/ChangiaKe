@@ -4,6 +4,7 @@
 
   .sign-in {
     // @include images("", 250px, "sign-in-pic", "")
+    width: 100%;
 
     .sign-in-pic {
       @extend %box-shadow;
