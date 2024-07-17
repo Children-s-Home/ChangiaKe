@@ -69,7 +69,7 @@ const RegisterForm : React.FC = () => {
        
         <Form.Item>
           <Button type="primary" htmlType="submit" className="submit-button">
-            Sign Up
+            Sign In 
           </Button>
         </Form.Item>
       </Form>

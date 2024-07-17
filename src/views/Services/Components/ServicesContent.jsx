@@ -40,7 +40,7 @@ const ServicesContent = () => {
         className='tabs'
         defaultActiveKey='1'
         animated={true}
-        tabBarGutter='12.5em'
+        // tabBarGutter='2.5em' 
         tabBarStyle={{ borderBottom: '0 !important' }}
         size='large'
         indicator={{

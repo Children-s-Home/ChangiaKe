@@ -54,7 +54,7 @@ const DonationForm = () => {
         <Flex gap={'middle'} id='donation-input'>
           <Title level={5}> My Donation</Title>
         </Flex>
-        <Flex gap={'large'} id='badges'>
+        <Flex gap={'large'} id='badges' wrap>
           {amounts.map((item) => (
             <Badge
               style={{ cursor: 'pointer' }}
@@ -74,7 +74,7 @@ const DonationForm = () => {
             initialValue={1}
           >
             <Radio.Group className='radio-group'>
-              <Flex gap={50}>
+              <Flex gap={30} wrap>
                 <Radio value={1}>One Time</Radio>
                 <Radio value={2}>Monthly</Radio>
                 <Radio value={3}>Annualy</Radio>

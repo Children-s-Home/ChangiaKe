@@ -7,6 +7,7 @@ import Discover from '../views/Discover/Index';
 import Details from '../views/CenterDetails/Index'
 import Services from '../views/Services/Index'
 import Auth from '@/views/Auth/Index';
+import Blog from '@/views/Blog/Index'
 
 export const routes = [
   {
@@ -40,6 +41,10 @@ export const routes = [
       {
         path: 'auth/:type',
         element: React.createElement(Auth)
+      },
+      {
+        path: 'blog',
+        element: React.createElement(Blog)
       }
     ],
   },
