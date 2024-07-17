@@ -44,6 +44,78 @@ const blogs : BlogCard[]  = [
 	author: 'Leo Mambotela',
 	date: '2nd June 2020'
 },
+{
+	blogImg: repeat,
+	title:  'The power of giving back to the community',
+	author: 'Simon Muhia',
+	date: '27 July 2025',
+},
+{
+	blogImg: repeat,
+	title: 'How to get the most out of your donation',
+	author: 'Muthoni Kihia',
+	date: '29 January 2022'
+}, 
+{
+	blogImg: repeat,
+	title: 'Benefits of giving back to the community',
+	author: 'Leo Mambotela',
+	date: '2nd June 2020'
+},
+{
+	blogImg: repeat,
+	title:  'The power of giving back to the community',
+	author: 'Simon Muhia',
+	date: '27 July 2025',
+},
+{
+	blogImg: repeat,
+	title: 'How to get the most out of your donation',
+	author: 'Muthoni Kihia',
+	date: '29 January 2022'
+}, 
+{
+	blogImg: repeat,
+	title: 'Benefits of giving back to the community',
+	author: 'Leo Mambotela',
+	date: '2nd June 2020'
+},
+{
+	blogImg: repeat,
+	title:  'The power of giving back to the community',
+	author: 'Simon Muhia',
+	date: '27 July 2025',
+},
+{
+	blogImg: repeat,
+	title: 'How to get the most out of your donation',
+	author: 'Muthoni Kihia',
+	date: '29 January 2022'
+}, 
+{
+	blogImg: repeat,
+	title: 'Benefits of giving back to the community',
+	author: 'Leo Mambotela',
+	date: '2nd June 2020'
+},
+{
+	blogImg: repeat,
+	title:  'The power of giving back to the community',
+	author: 'Simon Muhia',
+	date: '27 July 2025',
+},
+{
+	blogImg: repeat,
+	title: 'How to get the most out of your donation',
+	author: 'Muthoni Kihia',
+	date: '29 January 2022'
+}, 
+{
+	blogImg: repeat,
+	title: 'Benefits of giving back to the community',
+	author: 'Leo Mambotela',
+	date: '2nd June 2020'
+},
 
 	]
 

@@ -11,11 +11,11 @@ const { Text , Title } = Typography
 
 const Trending : React.FC = () => {
 	return (
-	<Row gutter={[16,16]} >
+	<Row gutter={[24,16]} >
 		<Col span ={24} >
 		<Title level={1} style={{marginBottom: '0px	'}} > Trending </Title>
 		</Col>
-		<Col md = {{span: 7, order: 1}}  lg={7} sm ={ {order: 4 ,	span: 12}} xs= { {order: 4, span: 24}}	> 
+		<Col md = {{span: 7, order: 1}}  sm ={ {order: 4 ,	span: 12}} xs= { {order: 4, span: 24}}	> 
 			<Flex vertical gap={"middle"}>
 			{blogs.slice(1,3).map(item => (
 					<BlogCardSmall {...item} key ={uuidv4()} />
@@ -27,7 +27,7 @@ const Trending : React.FC = () => {
 		<MainCard {...blogs[0]} /> 
 		 </Col>
 
-		< Col md = {{span: 7, order: 3}}  lg={7} sm ={ {order: 3, span: 12}} xs= { {order: 3, span: 24}}  > 
+		< Col md = {{span: 7, order: 3}}   sm ={ {order: 3, span: 12}} xs= { {order: 3, span: 24}}  > 
 			<Flex vertical gap={"middle"}>
 			{blogs.slice(3,5).map(item => (
 					<BlogCardSmall {...item} key ={uuidv4()} />
