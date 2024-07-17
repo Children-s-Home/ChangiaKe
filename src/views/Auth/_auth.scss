@@ -1,0 +1,29 @@
+.auth {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .sign-in {
+    .form-side {
+      h1 {
+        span {
+          color: $primary-brown;
+
+        }
+        margin-bottom: 50px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    form {
+        width: 70%;
+        .submit-button{
+            width: 100%;
+            @extend %box-shadow;
+        }
+    }
+    }
+  }
+}
