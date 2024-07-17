@@ -1,3 +1,4 @@
+import React from 'react'
 import { primaryBlack, primaryBrown } from "@/helpers/colors";
 import {
   Button,
@@ -9,18 +10,19 @@ import {
   Row,
   Typography,
 } from "antd";
-import React from "react";
 
 type FieldType = {
   username: string;
   password: string;
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  confirmPassword: string;
   remember?: string;
 };
 
-const { Text } = Typography;
-
-const SignInForm: React.FC = () => {
-  return (
+const RegisterForm : React.FC = () => {
+	  return (
     <ConfigProvider
       theme={{
         components: {
@@ -35,10 +37,21 @@ const SignInForm: React.FC = () => {
     >
       <Form>
         <Form.Item<FieldType>
-          name="username"
-          rules={[{ required: true, message: "Please input your username!" }]}
+          name="fullName"
+          rules={[{ required: true, message: "Please input your fullname!" }]}
+        >
+          <Input placeholder="Full Name" />
+        </Form.Item>
+        <Form.Item<FieldType>
+          name="email"
+          rules={[{ required: true, message: "Please input your email!" }]}
         >
           <Input placeholder="Email" />
+        </Form.Item><Form.Item<FieldType>
+          name="phoneNumber"
+          rules={[{ required: true, message: "Please input your phone number!" }]}
+        >
+          <Input placeholder="Phone Number" />
         </Form.Item>
 
         <Form.Item<FieldType>
@@ -47,19 +60,21 @@ const SignInForm: React.FC = () => {
         >
           <Input.Password placeholder="Password" />
         </Form.Item>
-        <Row style={{ width: "100%", marginBottom: "5px" }} justify={"end"}>
-          <Button type="link" style={{ color: primaryBrown }}>
-            Forgot password ?
-          </Button>
-        </Row>
+         <Form.Item<FieldType>
+          name="confirmPassword"
+          rules={[{ required: true, message: "Please input your password!" }]}
+        >
+          <Input.Password placeholder="Confirm Password" />
+        </Form.Item>
+       
         <Form.Item>
           <Button type="primary" htmlType="submit" className="submit-button">
-            Sign In
+            Sign Up
           </Button>
         </Form.Item>
       </Form>
     </ConfigProvider>
   );
-};
+}
 
-export default SignInForm;
+export default RegisterForm;
