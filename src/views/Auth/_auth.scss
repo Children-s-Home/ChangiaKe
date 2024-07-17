@@ -3,11 +3,21 @@
   margin-bottom: 30px;
 
   .sign-in {
+    // @include images("", 250px, "sign-in-pic", "")
+
+    .sign-in-pic {
+      @extend %box-shadow;
+      border-radius: 20px;
+      overflow: hidden !important;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
     .form-side {
       h1 {
+        text-align: center;
         span {
           color: $primary-brown;
-
         }
         margin-bottom: 50px;
       }
@@ -17,13 +27,13 @@
       align-items: center;
       justify-content: center;
 
-    form {
+      form {
         width: 70%;
-        .submit-button{
-            width: 100%;
-            @extend %box-shadow;
+        .submit-button {
+          width: 100%;
+          @extend %box-shadow;
         }
-    }
+      }
     }
   }
 }
