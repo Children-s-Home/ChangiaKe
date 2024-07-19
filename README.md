@@ -1,8 +1,13 @@
-# React + Vite
+# Changia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a short documentation for the developer to come up to speed with the project structure.  
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies used
+ - Vite. Bundler used
+ - Typescript. refer to the tsconfig file for the options . There might be javascript files as the project was started in js but 	moved to TS later
+ - React. This is the primary framework used , refer to the package.json to see the version at the time you are viewing the project.
+ - Ant Design. This is the primary component library used 
+ - Shadcn. Component library used to extend ant design. 
+ - Sass . used as the css preprocessor using the scss file extension.
+ - Apis. Declared in the helpers folder , Axios used.
+ - Tailwind. used to style the shadcn components. 
