@@ -32,9 +32,8 @@ Changia is a startup that connects various care centers with the help they need.
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
-   git https://github.com/Children-s-Home/client.git
-  ```
- 
+   	  git https://github.com/Children-s-Home/client.git
+   ```
 2. **Change directory**:
    ```bash
      cd client
