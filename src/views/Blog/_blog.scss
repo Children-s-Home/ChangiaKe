@@ -1,20 +1,14 @@
 .blog {
-	margin-top: 30px;
-	@include images('', 180px, "blog-img", '');
-	margin-bottom: 30px;
+  margin-top: 30px;
+  @include images("", 180px, "blog-img", "");
+  margin-bottom: 30px;
 
-	
-	.blog-img {
-
-	border-radius: 5px;
-	overflow: hidden;
-
-	}
-	.blog-main-card {
-	  background: $secondary-brown;
-	 //@include images(100%, 200px, "ant-card-cover", 180px);
-
+  .blog-img {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .blog-main-card {
+    background: $secondary-brown;
+    //@include images(100%, 200px, "ant-card-cover", 180px);
+  }
 }
-}
-
-

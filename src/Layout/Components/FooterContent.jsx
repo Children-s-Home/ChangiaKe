@@ -1,4 +1,4 @@
- import {
+import {
   Button,
   Col,
   ConfigProvider,
@@ -9,11 +9,11 @@
   Row,
   Tooltip,
   Typography,
-} from 'antd';
-import { useSelector } from 'react-redux';
-import { primaryBlack, primaryBlue, primaryBrown } from '../../helpers/colors';
-import { importantLinks, navItems, socialLinks } from '../layoutData';
-import { v4 as uuidv4 } from 'uuid';
+} from "antd";
+import { useSelector } from "react-redux";
+import { primaryBlack, primaryBlue, primaryBrown } from "../../helpers/colors";
+import { importantLinks, navItems, socialLinks } from "../layoutData";
+import { v4 as uuidv4 } from "uuid";
 
 const { Text, Title, Link } = Typography;
 
@@ -32,34 +32,34 @@ const FooterContent = () => {
         },
       }}
     >
-      <Row className='footer-row'>
-        <Col span={isMobile ? 24 : 16} className='footer-links'>
+      <Row className="footer-row">
+        <Col span={isMobile ? 24 : 16} className="footer-links">
           {!isMobile ? (
             <>
               <List
-                size='small'
+                size="small"
                 split={false}
                 dataSource={navItems.slice(1, 5)}
                 renderItem={(item) => <List.Item>{item.label}</List.Item>}
               />
               <List
-                size='small'
+                size="small"
                 split={false}
                 dataSource={importantLinks}
                 renderItem={(item) => <List.Item>{item.label}</List.Item>}
               />
             </>
           ) : (
-            <Flex wrap gap='large' style={{ marginBottom: 15 }}>
+            <Flex wrap gap="large" style={{ marginBottom: 15 }}>
               {[...importantLinks].map((item) => (
                 <Text key={uuidv4()}>{item.label}</Text>
               ))}
             </Flex>
           )}
         </Col>
-        <Col span={isMobile ? 24 : 8} className='newsletter'>
+        <Col span={isMobile ? 24 : 8} className="newsletter">
           <Flex vertical>
-            <Title level={4} style={{ fontWeight: '500', color: primaryBlue }}>
+            <Title level={4} style={{ fontWeight: "500", color: primaryBlue }}>
               Sign Up for the Newsletter
             </Title>
             <Text>
@@ -67,30 +67,30 @@ const FooterContent = () => {
               and the upcoming events that may interest you.
             </Text>
             <Form
-              autoComplete='off'
-              style={{ display: 'flex', gap: '10px', marginTop: '10px' }}
+              autoComplete="off"
+              style={{ display: "flex", gap: "10px", marginTop: "10px" }}
             >
               <Form.Item
-                style={{ flex: '1' }}
-                name='email'
+                style={{ flex: "1" }}
+                name="email"
                 rules={[
                   {
                     required: true,
-                    message: 'Please input your email',
+                    message: "Please input your email",
                   },
                   {
-                    type: 'email',
-                    message: 'Enter a valid email',
+                    type: "email",
+                    message: "Enter a valid email",
                   },
                 ]}
               >
                 <Input
-                  placeholder='Enter your email'
+                  placeholder="Enter your email"
                   style={{ borderWidth: 2 }}
                 />
               </Form.Item>
               <Form.Item>
-                <Button type='primary' htmlType='submit'>
+                <Button type="primary" htmlType="submit">
                   SUBMIT
                 </Button>
               </Form.Item>
@@ -99,13 +99,13 @@ const FooterContent = () => {
               {socialLinks.map((item) => (
                 <Tooltip key={uuidv4()} title={item.title}>
                   <Link
-                    className='footer-social'
+                    className="footer-social"
                     style={{
                       fontSize: 20,
                       color: primaryBlack,
                     }}
                     href={item.link}
-                    target='_blank'
+                    target="_blank"
                   >
                     {item.icon}
                   </Link>

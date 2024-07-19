@@ -1,14 +1,14 @@
-import { Flex } from "antd"
-import SearchBar from "./Components/SearchBar"
-import DiscoverContent from "./Components/DiscoverContent"
-
+import { Flex } from "antd";
+import SearchBar from "./Components/SearchBar";
+import DiscoverContent from "./Components/DiscoverContent";
 
 const Discover = () => {
-return <Flex gap={30} vertical className="discover-container">
-    <SearchBar />
-    <DiscoverContent />
-
+  return (
+    <Flex gap={30} vertical className="discover-container">
+      <SearchBar />
+      <DiscoverContent />
     </Flex>
-}
+  );
+};
 
-export default Discover
+export default Discover;

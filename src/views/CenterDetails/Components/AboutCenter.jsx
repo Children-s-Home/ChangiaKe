@@ -1,15 +1,15 @@
-import { Col, Typography } from 'antd';
-import { about } from '../DetailsData/detailsData';
-import { v4 as uuidv4 } from 'uuid';
-import { primaryBrown } from '../../../helpers/colors';
+import { Col, Typography } from "antd";
+import { about } from "../DetailsData/detailsData";
+import { v4 as uuidv4 } from "uuid";
+import { primaryBrown } from "../../../helpers/colors";
 
 const { Paragraph, Title } = Typography;
 const AboutCenter = () => {
   return about.map((item) => (
     <Col key={uuidv4()}>
       <Title>
-        {item.title.split(' ')[0]}
-        <span style={{ color: primaryBrown }}> {item.title.split(' ')[1]}</span>
+        {item.title.split(" ")[0]}
+        <span style={{ color: primaryBrown }}> {item.title.split(" ")[1]}</span>
       </Title>
       <Paragraph>{item.paragraph}</Paragraph>
     </Col>

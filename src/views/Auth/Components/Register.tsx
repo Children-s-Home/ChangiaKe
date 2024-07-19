@@ -1,15 +1,14 @@
-import {Col , Row, Typography, Flex} from 'antd'
+import { Col, Row, Typography, Flex } from "antd";
 import { primaryBrown } from "@/helpers/colors";
 import { FaFacebook } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import registerPic from '../assets/register.jpeg'
-import RegisterForm from './RegisterForm'
+import registerPic from "../assets/register.jpeg";
+import RegisterForm from "./RegisterForm";
 
-
-const {Title ,Text , Link } = Typography
+const { Title, Text, Link } = Typography;
 const Register = () => {
-    return ( 
-    <Row className="sign-in" >
+  return (
+    <Row className="sign-in">
       <Col span={12} className="sign-in-pic">
         <img src={registerPic} alt="" />
       </Col>
@@ -18,9 +17,9 @@ const Register = () => {
           Welcome to <span>Chang</span>ia
         </Title>
         <RegisterForm />
-        
+
         <Flex justify={"center"} vertical align="center" gap={"middle"}>
-         {/* <Text>
+          {/* <Text>
             <span style={{ color: primaryBrown }}>OR</span> Login with
           </Text>
           <Flex gap={"large"}>
@@ -39,8 +38,7 @@ const Register = () => {
         </Flex>
       </Col>
     </Row>
-    )
-
-}
+  );
+};
 
 export default Register;

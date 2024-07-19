@@ -7,15 +7,15 @@ import {
   Row,
   Select,
   Typography,
-} from 'antd';
+} from "antd";
 import {
   primaryBlack,
   primaryBrown,
   secondaryDullBrown,
-} from '../../../helpers/colors';
-import { BsSearch } from 'react-icons/bs';
-import { useSelector } from 'react-redux';
-import HeroImg from '../assets/hero.png';
+} from "../../../helpers/colors";
+import { BsSearch } from "react-icons/bs";
+import { useSelector } from "react-redux";
+import HeroImg from "../assets/hero.png";
 
 const { Title } = Typography;
 
@@ -32,7 +32,7 @@ const Hero = () => {
             colorPrimary: primaryBlack,
             colorPrimaryHover: primaryBrown,
             borderRadiusLG: 50,
-            primaryShadow: '2px 2px 8px 0px rgba(0,0,0,0.6)',
+            primaryShadow: "2px 2px 8px 0px rgba(0,0,0,0.6)",
           },
           Select: {
             activeBorderColor: primaryBlack,
@@ -45,44 +45,44 @@ const Hero = () => {
         },
       }}
     >
-      <Row className='hero'>
+      <Row className="hero">
         <Col span={isMobile ? 24 : 12}>
-          <Title level={1} className='hero-title'>
+          <Title level={1} className="hero-title">
             Give back <span>to your community. </span> <br />
             <span> Find a</span> childrens’ home <span> near you</span>
           </Title>
-          <Form autoComplete='off'>
+          <Form autoComplete="off">
             <Form.Item
-              name='address'
+              name="address"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your email',
+                  message: "Please input your email",
                 },
               ]}
             >
               <Select
                 showSearch
                 suffixIcon={<BsSearch color={secondaryDullBrown} size={18} />}
-                size='large'
-                placeholder='Enter your address or name of the children’s home'
-                style={{ borderWidth: '2px !important', width: '80%' }}
+                size="large"
+                placeholder="Enter your address or name of the children’s home"
+                style={{ borderWidth: "2px !important", width: "80%" }}
               />
             </Form.Item>
             <Form.Item>
-              <Button type='primary' size='large' htmlType='submit'>
+              <Button type="primary" size="large" htmlType="submit">
                 Donate Now
               </Button>
             </Form.Item>
           </Form>
         </Col>
         <Col
-          className='hero-photo'
+          className="hero-photo"
           span={isMobile ? 24 : 12}
-          style={{ display: `${isMobile ? 'none' : 'flex'}` }}
+          style={{ display: `${isMobile ? "none" : "flex"}` }}
         >
           <Col
-            className='hero-image-container'
+            className="hero-image-container"
             style={{ backgroundImage: `url(${HeroImg})` }}
           />
         </Col>

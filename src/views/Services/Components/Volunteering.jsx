@@ -1,16 +1,13 @@
-import {  Flex, Row, Typography } from 'antd';
-import { volunteering } from '../data/ServicesData';
+import { Flex, Row, Typography } from "antd";
+import { volunteering } from "../data/ServicesData";
 
-
-const { Paragraph,  } = Typography;
+const { Paragraph } = Typography;
 
 const Volunteering = () => {
   return (
-    <Flex vertical gap={30} className='services-volunteering'>
+    <Flex vertical gap={30} className="services-volunteering">
       <Paragraph>{volunteering}</Paragraph>
-      <Row className='volunteering-card' gutter={[16, 16]}>
-      
-      </Row>
+      <Row className="volunteering-card" gutter={[16, 16]}></Row>
     </Flex>
   );
 };
