@@ -11,3 +11,4 @@ This is a short documentation for the developer to come up to speed with the pro
  - Sass . used as the css preprocessor using the scss file extension.
  - Apis. Declared in the helpers folder , Axios used.
  - Tailwind. used to style the shadcn components. 
+ - Figma. The design is on figma , ask the project admin for access.
