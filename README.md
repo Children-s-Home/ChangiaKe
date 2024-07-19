@@ -7,7 +7,7 @@ This is a short documentation for the developer to come up to speed with the pro
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [Coding Conventions](#coding-conventions)
-- [Deployment](##Deployment)
+- [Deployment](#deployment)
 - [Contributing](#contributing)
 
 
