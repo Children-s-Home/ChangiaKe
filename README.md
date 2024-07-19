@@ -1,6 +1,15 @@
 # Changia
 
 This is a short documentation for the developer to come up to speed with the project structure.  
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Coding Conventions](#coding-conventions)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+
 
 ## Project Overview
 Changia is a startup that connects various care centers with the help they need. The project aims to improve the connection between the centers and willing help in form of volunteers or donators.
