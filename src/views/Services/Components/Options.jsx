@@ -5,7 +5,7 @@ import visa from '../assets/visa.png';
 
 const Options = () => {
   return (
-    <Flex wrap gap={'large'}  align='middle' justify='center'>
+    <Flex wrap gap={'large'} vertical align='middle' justify='center'>
       <img src={paypal} alt='' />
       <img src={visa} alt='' />
       <img src={mpesa} alt='' />
