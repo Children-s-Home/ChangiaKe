@@ -1,24 +1,24 @@
-import { ConfigProvider, Tabs } from 'antd';
-import { primaryBrown } from '../../../helpers/colors/';
-import Donation from './Donation';
-import Volunteering from './Volunteering';
-import Fundraising from './Fundraising';
+import { ConfigProvider, Tabs } from "antd";
+import { primaryBrown } from "../../../helpers/colors/";
+import Donation from "./Donation";
+import Volunteering from "./Volunteering";
+import Fundraising from "./Fundraising";
 
 const ServicesContent = () => {
   const items = [
     {
-      key: 'Donation',
-      label: 'Donation',
+      key: "Donation",
+      label: "Donation",
       children: <Donation />,
     },
     {
-      key: 'Volunteering',
-      label: 'Volunteering',
+      key: "Volunteering",
+      label: "Volunteering",
       children: <Volunteering />,
     },
     {
-      key: 'Fundraising',
-      label: 'Fundraising',
+      key: "Fundraising",
+      label: "Fundraising",
       children: <Fundraising />,
     },
   ];
@@ -37,15 +37,15 @@ const ServicesContent = () => {
       }}
     >
       <Tabs
-        className='tabs'
-        defaultActiveKey='1'
+        className="tabs"
+        defaultActiveKey="1"
         animated={true}
-        // tabBarGutter='2.5em' 
-        tabBarStyle={{ borderBottom: '0 !important' }}
-        size='large'
+        // tabBarGutter='2.5em'
+        tabBarStyle={{ borderBottom: "0 !important" }}
+        size="large"
         indicator={{
           size: (origin) => origin - 50,
-          align: 'center',
+          align: "center",
         }}
         centered
         items={items}

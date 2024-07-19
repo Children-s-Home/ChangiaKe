@@ -1,13 +1,13 @@
-import { ConfigProvider, Dropdown, Flex, Menu, Typography } from 'antd';
+import { ConfigProvider, Dropdown, Flex, Menu, Typography } from "antd";
 import {
   primaryBlack,
   primaryBrown,
   secondaryBrown,
-} from '../../helpers/colors';
-import { useSelector } from 'react-redux';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { navItems } from '../layoutData';
-import useRouting from '../../hooks/useRouting';
+} from "../../helpers/colors";
+import { useSelector } from "react-redux";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { navItems } from "../layoutData";
+import useRouting from "../../hooks/useRouting";
 
 const { Title } = Typography;
 const HeaderContent = () => {
@@ -24,39 +24,39 @@ const HeaderContent = () => {
         components: {
           Menu: {
             colorText: primaryBrown,
-            itemBg: 'transparent',
-           
+            itemBg: "transparent",
+
             itemSelectedColor: primaryBlack,
-            fontFamily: 'DM Sans, sans-serif',
+            fontFamily: "DM Sans, sans-serif",
           },
         },
       }}
     >
-      <Flex align='center' style={{ height: '100%' }}>
+      <Flex align="center" style={{ height: "100%" }}>
         <Title level={2} style={{ margin: 0 }}>
           <span style={{ color: secondaryBrown }}>Chang</span>ia
         </Title>
         {!isMobile ? (
           <Menu
-            className='header-menu'
-            mode='horizontal'
-            defaultSelectedKeys={['2']}
+            className="header-menu"
+            mode="horizontal"
+            defaultSelectedKeys={["2"]}
             items={navItems}
             onClick={handleClick}
           />
         ) : (
           <Dropdown
-            className='dropdown'
-            trigger={['click']}
-            overlayClassName='dropdown-overlay'
+            className="dropdown"
+            trigger={["click"]}
+            overlayClassName="dropdown-overlay"
             menu={{
               items: navItems,
               selectable: true,
               onClick: handleClick,
-              defaultSelectedKeys: ['home'],
+              defaultSelectedKeys: ["home"],
             }}
             arrow={{ pointAtCenter: true }}
-            placement='bottomRight'
+            placement="bottomRight"
           >
             <RxHamburgerMenu fontSize={24} />
           </Dropdown>

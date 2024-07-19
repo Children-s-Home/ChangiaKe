@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { primaryBlack, primaryBrown } from "@/helpers/colors";
 import {
   Button,
@@ -21,8 +21,8 @@ type FieldType = {
   remember?: string;
 };
 
-const RegisterForm : React.FC = () => {
-	  return (
+const RegisterForm: React.FC = () => {
+  return (
     <ConfigProvider
       theme={{
         components: {
@@ -47,9 +47,12 @@ const RegisterForm : React.FC = () => {
           rules={[{ required: true, message: "Please input your email!" }]}
         >
           <Input placeholder="Email" />
-        </Form.Item><Form.Item<FieldType>
+        </Form.Item>
+        <Form.Item<FieldType>
           name="phoneNumber"
-          rules={[{ required: true, message: "Please input your phone number!" }]}
+          rules={[
+            { required: true, message: "Please input your phone number!" },
+          ]}
         >
           <Input placeholder="Phone Number" />
         </Form.Item>
@@ -60,21 +63,21 @@ const RegisterForm : React.FC = () => {
         >
           <Input.Password placeholder="Password" />
         </Form.Item>
-         <Form.Item<FieldType>
+        <Form.Item<FieldType>
           name="confirmPassword"
           rules={[{ required: true, message: "Please input your password!" }]}
         >
           <Input.Password placeholder="Confirm Password" />
         </Form.Item>
-       
+
         <Form.Item>
           <Button type="primary" htmlType="submit" className="submit-button">
-            Sign In 
+            Sign In
           </Button>
         </Form.Item>
       </Form>
     </ConfigProvider>
   );
-}
+};
 
 export default RegisterForm;

@@ -1,4 +1,4 @@
-import { primaryBlack, primaryBlue, primaryBrown } from '@/helpers/colors';
+import { primaryBlack, primaryBlue, primaryBrown } from "@/helpers/colors";
 import {
   Badge,
   Button,
@@ -13,8 +13,8 @@ import {
   Row,
   Select,
   Typography,
-} from 'antd';
-import { v4 as uuidv4 } from 'uuid';
+} from "antd";
+import { v4 as uuidv4 } from "uuid";
 
 const { Title, Text } = Typography;
 
@@ -27,7 +27,7 @@ const DonationForm = () => {
         components: {
           Divider: {
             lineWidth: 2,
-            colorSplit: '#828282',
+            colorSplit: "#828282",
             marginLG: 18,
           },
           Radio: {
@@ -37,11 +37,11 @@ const DonationForm = () => {
             wrapperMarginInlineEnd: 0,
           },
           Badge: {
-            colorBorderBg: 'none',
+            colorBorderBg: "none",
           },
 
           Input: {
-            colorBorder: 'tranparent',
+            colorBorder: "tranparent",
             colorPrimary: primaryBlack,
             borderRadius: 50,
             colorTextPlaceholder: primaryBlack,
@@ -51,13 +51,13 @@ const DonationForm = () => {
       }}
     >
       <Form>
-        <Flex gap={'middle'} id='donation-input'>
+        <Flex gap={"middle"} id="donation-input">
           <Title level={5}> My Donation</Title>
         </Flex>
-        <Flex gap={'large'} id='badges' wrap>
+        <Flex gap={"large"} id="badges" wrap>
           {amounts.map((item) => (
             <Badge
-              style={{ cursor: 'pointer' }}
+              style={{ cursor: "pointer" }}
               color={primaryBlue}
               key={uuidv4()}
               count={`$ ${item}`}
@@ -66,14 +66,14 @@ const DonationForm = () => {
           ))}
         </Flex>
         <Divider />
-        <Flex vertical id='frequency'>
+        <Flex vertical id="frequency">
           <Title level={5}>Frequency</Title>
           <Form.Item
-            name={'frequency'}
+            name={"frequency"}
             style={{ marginBottom: 0 }}
             initialValue={1}
           >
-            <Radio.Group className='radio-group'>
+            <Radio.Group className="radio-group">
               <Flex gap={30} wrap>
                 <Radio value={1}>One Time</Radio>
                 <Radio value={2}>Monthly</Radio>
@@ -83,70 +83,70 @@ const DonationForm = () => {
           </Form.Item>
         </Flex>
         <Divider />
-        <Flex id='details-form' vertical>
+        <Flex id="details-form" vertical>
           <Title level={5} style={{ marginBottom: 10 }}>
             Personal Details
           </Title>
           <Row gutter={20}>
             <Col span={12}>
               <Form.Item
-                name={'firstName'}
+                name={"firstName"}
                 rules={[
                   {
                     required: true,
-                    message: 'Kindly enter your first name',
+                    message: "Kindly enter your first name",
                   },
                 ]}
               >
-                <Input placeholder={'First Name'} />
+                <Input placeholder={"First Name"} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item
-                name={'lastName'}
+                name={"lastName"}
                 rules={[
                   {
                     required: true,
-                    message: 'Kindly enter your Last name',
+                    message: "Kindly enter your Last name",
                   },
                 ]}
               >
-                <Input placeholder={'Last Name'} />
+                <Input placeholder={"Last Name"} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item
-                name={'email'}
+                name={"email"}
                 rules={[
                   {
                     required: true,
-                    message: 'Kindly enter your email',
+                    message: "Kindly enter your email",
                   },
                 ]}
               >
-                <Input type='email' placeholder={'email'} />
+                <Input type="email" placeholder={"email"} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item
-                name={'country'}
+                name={"country"}
                 rules={[
                   {
                     required: false,
-                    message: 'Kindly enter your first name',
+                    message: "Kindly enter your first name",
                   },
                 ]}
               >
-                <Input placeholder={'Country'} />
+                <Input placeholder={"Country"} />
               </Form.Item>
             </Col>
           </Row>
         </Flex>
         <Divider />
 
-        <Flex vertical id='specify-donation'>
+        <Flex vertical id="specify-donation">
           <Title level={5}>Specify Donation</Title>
-          <Form.Item name={'specify'} initialValue={3}>
+          <Form.Item name={"specify"} initialValue={3}>
             <Radio.Group>
               <Flex wrap gap={20}>
                 <Radio value={3}>Any Children’s home</Radio>
@@ -159,12 +159,12 @@ const DonationForm = () => {
           </Form.Item>
         </Flex>
         <Form.Item>
-          <Row justify={'center'}>
+          <Row justify={"center"}>
             <Button
-              style={{ width: '50%', borderRadius: 50 }}
-              type='primary'
-              size='large'
-              htmlType='submit'
+              style={{ width: "50%", borderRadius: 50 }}
+              type="primary"
+              size="large"
+              htmlType="submit"
             >
               Submit
             </Button>

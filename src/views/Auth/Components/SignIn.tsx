@@ -10,7 +10,7 @@ const { Title, Text, Link } = Typography;
 const SignIn: React.FC = () => {
   const { navigateTo } = useRouting();
   return (
-    <Row className="sign-in" >
+    <Row className="sign-in">
       <Col span={12} className="sign-in-pic">
         <img src={signIn} alt="" />
       </Col>
@@ -19,7 +19,7 @@ const SignIn: React.FC = () => {
           Welcome to <span>Chang</span>ia
         </Title>
         <SignInForm />
-        
+
         <Flex justify={"center"} vertical align="center" gap={"middle"}>
           <Text>
             <span style={{ color: primaryBrown }}>OR</span> Login with

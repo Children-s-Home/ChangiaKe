@@ -1,45 +1,45 @@
 @use "variables" as *;
 
 @mixin flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @mixin flex-row-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 %box-shadow {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 %heading {
-    h1 {
-        text-align: center;
-        margin: auto;
-        margin-bottom: 30px;
-        span {
-            color: $primary-brown;
-        }
+  h1 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    span {
+      color: $primary-brown;
     }
+  }
 }
 
 @mixin images($width, $height, $class, $max-height: none) {
-    .#{$class} {
-        width: $width; /* Adjust width as needed */
-        height: $height; /* Adjust height as needed */
-        position: relative;
-        max-height: $max-height;
-        overflow: hidden;
+  .#{$class} {
+    width: $width; /* Adjust width as needed */
+    height: $height; /* Adjust height as needed */
+    position: relative;
+    max-height: $max-height;
+    overflow: hidden;
 
-        > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
+  }
 }
