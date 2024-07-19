@@ -34,6 +34,7 @@ Changia is a startup that connects various care centers with the help they need.
    ```bash
    git https://github.com/Children-s-Home/client.git
   ```
+ 
 2. **Change directory**:
    ```bash
      cd client
@@ -46,9 +47,6 @@ Changia is a startup that connects various care centers with the help they need.
    ```bash
      yarn dev
    ```
-
-#### 5. Coding Conventions
-Any specific guidelines or conventions used in the codebase.
 
 ## Coding Conventions
 - Use [Prettier](https://prettier.io/) for code formatting.
