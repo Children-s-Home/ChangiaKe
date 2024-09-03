@@ -1,7 +1,7 @@
-import { Button, Card, Flex, Row, Typography } from "antd";
-import { causes } from "../HomeData/causes";
-import { v4 as uuidv4 } from "uuid";
-import { CiLocationOn } from "react-icons/ci";
+import { Button, Card, Flex, Row, Typography } from 'antd';
+import { causes } from '../HomeData/causes';
+import { v4 as uuidv4 } from 'uuid';
+import { CiLocationOn } from 'react-icons/ci';
 
 const { Title, Text, Paragraph } = Typography;
 const Causes = () => {

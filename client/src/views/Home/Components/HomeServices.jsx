@@ -1,7 +1,7 @@
-import { Button, Col, Flex, Row, Typography } from "antd";
-import { primaryBrown } from "../../../helpers/colors";
-import { services } from "../HomeData/services";
-import { v4 as uuidv4 } from "uuid";
+import { Button, Flex, Row, Typography } from 'antd';
+import { primaryBrown } from '../../../helpers/colors';
+import { services } from '../HomeData/services';
+import { v4 as uuidv4 } from 'uuid';
 
 const { Title, Paragraph } = Typography;
 const HomeServices = () => {
