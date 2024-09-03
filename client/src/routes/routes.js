@@ -8,6 +8,7 @@ import Details from "../views/CenterDetails/Index";
 import Services from "../views/Services/Index";
 import Auth from "@/views/Auth/Index";
 import Blog from "@/views/Blog/Index";
+import UserLogIn from "@/views/User";
 
 export const routes = [
   {
@@ -46,6 +47,10 @@ export const routes = [
         path: "blog",
         element: React.createElement(Blog),
       },
+      {
+        path: 'user',
+        element: React.createElement(UserLogIn)
+      }
     ],
   },
 ];
