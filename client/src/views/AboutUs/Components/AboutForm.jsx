@@ -7,7 +7,7 @@ import {
   Input,
   Row,
   Typography,
-} from "antd";
+} from 'antd';
 const { Title } = Typography;
 const { TextArea } = Input;
 const AboutForm = () => {
@@ -21,86 +21,86 @@ const AboutForm = () => {
         },
       }}
     >
-      <Row className="about-form">
+      <Row className='about-form'>
         <Title>
           Contact <span>Us</span>
         </Title>
-        <Form className="form">
+        <Form className='form'>
           <Title level={3}>Write us a message</Title>
           <Row gutter={24}>
             <Col md={12} xs={24}>
               <Form.Item
-                name="first_name"
+                name='first_name'
                 rules={[
                   {
                     required: true,
-                    message: "Please input your first name",
+                    message: 'Please input your first name',
                   },
                 ]}
               >
-                <Input size="large" placeholder="First Name" />
+                <Input size='large' placeholder='First Name' />
               </Form.Item>
             </Col>
             <Col md={12} xs={24}>
               <Form.Item
-                name="last_name"
+                name='last_name'
                 rules={[
                   {
                     required: true,
-                    message: "Please input your last name",
+                    message: 'Please input your last name',
                   },
                 ]}
               >
-                <Input size="large" placeholder="Last Name" />
+                <Input size='large' placeholder='Last Name' />
               </Form.Item>
             </Col>
             <Col md={12} xs={24}>
               <Form.Item
-                name="email"
+                name='email'
                 rules={[
                   {
                     required: true,
-                    message: "Please input your email",
+                    message: 'Please input your email',
                   },
                   {
-                    type: "email",
-                    message: "Please input a valid email",
+                    type: 'email',
+                    message: 'Please input a valid email',
                   },
                 ]}
               >
-                <Input size="large" placeholder="Email" />
+                <Input size='large' placeholder='Email' />
               </Form.Item>
             </Col>
             <Col md={12} xs={24}>
               <Form.Item
-                name="phone_number"
+                name='phone_number'
                 rules={[
                   {
-                    type: "number",
-                    message: "Please input a valid number",
+                    type: 'number',
+                    message: 'Please input a valid number',
                   },
                 ]}
               >
-                <Input size="large" placeholder="Phone Number" />
+                <Input size='large' placeholder='Phone Number' />
               </Form.Item>
             </Col>
             <Col span={24}>
               <Form.Item
-                name="message"
+                name='message'
                 rules={[
                   {
                     required: true,
-                    message: "Please input a message",
+                    message: 'Please input a message',
                   },
                 ]}
               >
-                <TextArea rows={4} placeholder="Message" size="large" />
+                <TextArea rows={4} placeholder='Message' size='large' />
               </Form.Item>
             </Col>
           </Row>
-          <Flex className="button">
+          <Flex className='button'>
             <Form.Item>
-              <Button type="primary" htmlType="submit">
+              <Button type='primary' htmlType='submit'>
                 SUBMIT
               </Button>
             </Form.Item>

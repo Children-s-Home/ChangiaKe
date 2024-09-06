@@ -6,7 +6,7 @@ import { Session } from '@supabase/supabase-js';
 
 const supabase: SupabaseClient = createClient(
   'https://dqvjzoywrfdqjzwhhnpq.supabase.co/',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxdmp6b3l3cmZkcWp6d2hobnBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUzNTkzOTEsImV4cCI6MjA0MDkzNTM5MX0.IYW9yDXiBkYCBsTaAKQjT8q0F1HxzcsKzFAxRKOLux8',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxdmp6b3l3cmZkcWp6d2hobnBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUzNTkzOTEsImV4cCI6MjA0MDkzNTM5MX0.IYW9yDXiBkYCBsTaAKQjT8q0F1HxzcsKzFAxRKOLux8'
 );
 
 const UserLogIn = () => {
