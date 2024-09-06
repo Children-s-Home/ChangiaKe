@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, Flex, Typography } from 'antd';
-import { gallery } from '../DetailsData/detailsData';
+import { gallery } from '../DetailsData/about';
 
 const { Title } = Typography;
 const Gallery = () => {

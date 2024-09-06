@@ -1,5 +1,5 @@
 import { Button, Col, Flex, Row, Typography } from 'antd';
-import { needs } from '../DetailsData/detailsData';
+import { needs } from '../DetailsData/about';
 import { v4 as uuidv4 } from 'uuid';
 
 const { Title } = Typography;
