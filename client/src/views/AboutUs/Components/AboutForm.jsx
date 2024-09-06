@@ -16,7 +16,7 @@ const AboutForm = () => {
       theme={{
         components: {
           Input: {
-            borderRadiusLG: 0,
+            borderRadiusLG: 5,
           },
         },
       }}
