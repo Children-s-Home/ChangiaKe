@@ -1,80 +1,80 @@
-import React from "react";
+import React from 'react';
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-} from "react-icons/fa6";
+} from 'react-icons/fa6';
 
 export const socialLinks = [
   {
-    url: "",
+    url: '',
     icon: React.createElement(FaTwitter),
-    title: "Twitter",
+    title: 'Twitter',
   },
   {
-    url: "",
+    url: '',
     icon: React.createElement(FaFacebook),
-    title: "Facebook",
+    title: 'Facebook',
   },
   {
-    url: "",
+    url: '',
     icon: React.createElement(FaInstagram),
-    title: "Instagram",
+    title: 'Instagram',
   },
   {
-    url: "",
+    url: '',
     icon: React.createElement(FaLinkedin),
-    title: "Linked In",
+    title: 'Linked In',
   },
 ];
 
 export const navItems = [
   {
-    key: "home",
-    label: "Home",
+    key: 'home',
+    label: 'Home',
   },
   {
-    key: "about-us",
-    label: "About Us",
+    key: 'about-us',
+    label: 'About Us',
   },
   {
-    key: "discover",
-    label: "Discover",
+    key: 'discover',
+    label: 'Discover',
   },
   {
-    key: "services",
-    label: "Services",
+    key: 'services',
+    label: 'Services',
   },
   {
-    key: "blog",
-    label: "Blog",
+    key: 'blog',
+    label: 'Blog',
   },
   {
-    key: "auth/sign-up",
-    label: "Sign Up",
+    key: 'contact-us',
+    label: 'Contact Us',
   },
   {
-    key: "auth/sign-in",
-    label: "Sign In",
+    key: 'auth/sign-in',
+    label: 'Sign In',
   },
 ];
 
 export const importantLinks = [
   {
-    link: "",
-    label: "Cookies Policies",
+    link: '',
+    label: 'Cookies Policies',
   },
   {
-    link: "",
-    label: "Privacy Notice",
+    link: '',
+    label: 'Privacy Notice',
   },
   {
-    link: "",
-    label: "Terms and Conditions",
+    link: '',
+    label: 'Terms and Conditions',
   },
   {
-    link: "",
-    label: "Report",
+    link: '',
+    label: 'Report',
   },
 ];
