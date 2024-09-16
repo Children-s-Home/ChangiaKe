@@ -11,7 +11,7 @@ import {
 const Onboarding = () => {
   return (
     <section id='onboarding' className='w-full py-2  bg-gray-50'>
-      <div className='container px-4 md:px-6'>
+      <div>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8'>
           Join Our Network
         </h2>
@@ -19,7 +19,7 @@ const Onboarding = () => {
           Onboarding your children's home is quick and easy. Follow these simple
           steps to become part of our supportive community.
         </p>
-        <div className='flex flex-col md:flex-row justify-center items-center md:items-stretch space-y-4 md:space-y-0'>
+        <div className='flex flex-col md:flex-row justify-between items-center md:items-stretch space-y-4 md:space-y-0'>
           <Card className='w-full md:w-48 text-center'>
             <CardContent className='p-4'>
               <LinkIcon className='h-10 w-10 mx-auto mb-2 text-[#e78124]' />
