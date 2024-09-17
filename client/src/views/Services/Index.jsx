@@ -1,12 +1,12 @@
-import { Flex } from "antd";
-import ServicesHero from "./Components/ServicesHero";
-import ServicesContent from "./Components/ServicesContent";
+import { Flex } from 'antd';
+import ServicesHero from './Components/ServicesHero';
+import ServicesNew from './Components/NewServices';
 
 const Services = () => {
   return (
-    <Flex vertical className="services-container">
+    <Flex vertical className='services-container'>
       <ServicesHero />
-      <ServicesContent />
+      <ServicesNew />
     </Flex>
   );
 };
