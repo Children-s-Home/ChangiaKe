@@ -10,10 +10,10 @@ import {
 } from 'lucide-react';
 const Onboarding = () => {
   return (
-    <section id='onboarding' className='w-full py-2  bg-gray-50'>
+    <section id='onboarding' className='w-full py-2  '>
       <div>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8'>
-          Join Our Network
+          Join Us
         </h2>
         <p className='text-xl text-center mb-12 max-w-2xl mx-auto'>
           Onboarding your children's home is quick and easy. Follow these simple

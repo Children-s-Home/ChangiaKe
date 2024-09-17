@@ -138,7 +138,7 @@ const ContactPage = () => {
           </div>
         </section>
 
-        <section id='faq' className='w-full py-12  bg-gray-50'>
+        <section id='faq' className='w-full py-12  '>
           <div>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8'>
               Frequently Asked Questions
