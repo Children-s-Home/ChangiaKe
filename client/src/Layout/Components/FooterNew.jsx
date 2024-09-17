@@ -4,8 +4,8 @@ import { Twitter, Instagram, Linkedin, Facebook } from 'lucide-react';
 const { Link } = Typography;
 const FooterNew = () => {
   return (
-    <footer className='bg-gray-100 '>
-      <div className='container px-4 md:px-6'>
+    <footer className=' py-8 bg-gray-100 '>
+      <div>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
             <h3 className='text-lg font-bold mb-4'>About Us</h3>

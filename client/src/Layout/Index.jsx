@@ -46,7 +46,7 @@ const AppLayout = () => {
         <Content className='content'>
           <Outlet />
         </Content>
-        <Footer>
+        <Footer className='footer'>
           <FooterNew />
         </Footer>
       </Layout>
