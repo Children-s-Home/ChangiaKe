@@ -17,8 +17,7 @@ import {
   Instagram,
   Linkedin,
 } from 'lucide-react';
-const mapApiKey = import.meta.env.MAPS_API_KEY;
-console.log(mapApiKey);
+const mapApiKey = import.meta.env.VITE_MAPS_API_KEY;
 import { Typography } from 'antd';
 const { Link } = Typography;
 const ContactPage = () => {

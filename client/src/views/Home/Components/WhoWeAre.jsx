@@ -13,7 +13,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const WhoWeAre = () => {
   return (
-    <section id='about' className='w-full py-12 md:py-14 lg:py-22 bg-gray-50'>
+    <section id='about' className='w-full py-12 md:py-14 lg:py-22 '>
       <div>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8'>
           Who We Are
