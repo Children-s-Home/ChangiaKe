@@ -88,7 +88,7 @@ const FooterNew = () => {
         </div>
         <div className='mt-8 pt-8 border-t border-gray-200'>
           <p className='text-center text-xs text-gray-600'>
-            © 2024 Helping Hearts NGO. All rights reserved.
+            © 2024 Changia. All rights reserved.
           </p>
         </div>
       </div>
