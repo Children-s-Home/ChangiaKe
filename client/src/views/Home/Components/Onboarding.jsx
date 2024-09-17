@@ -69,7 +69,7 @@ const Onboarding = () => {
           </Card>
         </div>
         <div className='text-center mt-12'>
-          <Button className='bg-[#e78124] text-white hover:bg-[#c66a1e]'>
+          <Button className='bg-[#e78124] text-xl text-white hover:bg-[#c66a1e]'>
             Start Your Journey
           </Button>
         </div>
