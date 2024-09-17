@@ -17,6 +17,8 @@ import {
   Instagram,
   Linkedin,
 } from 'lucide-react';
+const mapApiKey = import.meta.env.MAPS_API_KEY;
+console.log(mapApiKey);
 import { Typography } from 'antd';
 const { Link } = Typography;
 const ContactPage = () => {
@@ -104,7 +106,7 @@ const ContactPage = () => {
                 </Card>
                 <div className='aspect-w-16 aspect-h-9'>
                   <iframe
-                    src='https://www.google.com/maps/embed/v1/search?q=Nairobi%2C%20Kenya&key=AIzaSyB1NmHGrnCFgeyiSQrReTyIZrFmhvut73k'
+                    src={`https://www.google.com/maps/embed/v1/search?q=Nairobi%2C%20Kenya&key=${mapApiKey}`}
                     width='600'
                     height='450'
                     style={{ border: 0 }}
