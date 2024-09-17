@@ -1,6 +1,6 @@
 .blog {
   margin-top: 30px;
-  @include images("", 180px, "blog-img", "");
+  @include images('', 180px, 'blog-img', '');
   margin-bottom: 30px;
 
   .blog-img {
@@ -10,5 +10,12 @@
   .blog-main-card {
     background: $secondary-brown;
     //@include images(100%, 200px, "ant-card-cover", 180px);
+  }
+  .trending {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
   }
 }

@@ -1,5 +1,5 @@
-@use "../../sass/reusable" as *;
-@use "../../sass/variables" as *;
+@use '../../sass/reusable' as *;
+@use '../../sass/variables' as *;
 
 .home-container {
   .hero {
@@ -99,7 +99,7 @@
 
       .causes-card {
         flex: 1;
-        border-radius: 0px;
+        border-radius: 10px;
 
         background: $secondary-brown;
         @extend %box-shadow;
@@ -111,7 +111,7 @@
           }
         }
 
-        @include images(100%, 170px, "ant-card-cover", 180px);
+        @include images(100%, 170px, 'ant-card-cover', 180px);
       }
     }
   }
@@ -119,6 +119,7 @@
     @extend %heading;
     margin-bottom: 40px;
     .card-container {
+      border-radius: 10px;
       @extend %box-shadow;
       .card-content {
         flex: 1;

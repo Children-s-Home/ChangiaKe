@@ -1,10 +1,10 @@
 import { Col, Typography } from 'antd';
-import { about } from '../HomeData/about';
+import { about } from '../DetailsData/about';
 import { v4 as uuidv4 } from 'uuid';
 import { primaryBrown } from '../../../helpers/colors';
 
 const { Paragraph, Title } = Typography;
-const HomeAbout = () => {
+const AboutCenter = () => {
   return about.map((item) => (
     <Col key={uuidv4()}>
       <Title>
@@ -16,4 +16,4 @@ const HomeAbout = () => {
   ));
 };
 
-export default HomeAbout;
+export default AboutCenter;

@@ -1,15 +1,16 @@
-@use "variables" as *;
-@use "reusable" as *;
+@use 'variables' as *;
+@use 'reusable' as *;
 
-@import "../Layout/layout";
-@import "./app";
-@import "../views/Home/home";
-@import "../views/AboutUs/aboutUs";
-@import "../views/Discover/discover";
-@import "../views/CenterDetails/details";
-@import "../views/Services/services";
-@import "../views/Auth/auth";
-@import "../views/Blog/blog";
+@import '../Layout/layout';
+@import './app';
+@import '../views/Home/home';
+@import '../views/AboutUs/aboutUs';
+@import '../views/Discover/discover';
+@import '../views/CenterDetails/details';
+@import '../views/Services/services';
+@import '../views/Auth/auth';
+@import '../views/Blog/blog';
+@import '../views/ContactUs/contactUs';
 
 @tailwind base;
 @tailwind components;

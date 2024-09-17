@@ -1,13 +1,13 @@
 import { Col, Typography } from 'antd';
-import { about } from '../HomeData/about';
+import { principles } from '../aboutData/about';
 import { v4 as uuidv4 } from 'uuid';
 import { primaryBrown } from '../../../helpers/colors';
 
 const { Paragraph, Title } = Typography;
-const HomeAbout = () => {
-  return about.map((item) => (
-    <Col key={uuidv4()}>
-      <Title>
+const PrinciplesSection = () => {
+  return principles.map((item) => (
+    <Col key={uuidv4()} style={{ marginTop: '30px' }}>
+      <Title style={{ textAlign: 'center' }}>
         {item.title.split(' ')[0]}
         <span style={{ color: primaryBrown }}> {item.title.split(' ')[1]}</span>
       </Title>
@@ -16,4 +16,4 @@ const HomeAbout = () => {
   ));
 };
 
-export default HomeAbout;
+export default PrinciplesSection;

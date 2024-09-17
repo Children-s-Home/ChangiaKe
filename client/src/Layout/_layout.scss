@@ -26,13 +26,6 @@
         }
       }
       li:nth-last-child(2) {
-        padding-right: 0;
-        > span {
-          background: $primary-black;
-          @extend %user-menu-items;
-        }
-      }
-      li:nth-last-child(3) {
         > span {
           background: $primary-brown;
           @extend %user-menu-items;
