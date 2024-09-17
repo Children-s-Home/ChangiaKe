@@ -10,8 +10,13 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import useRouting from '@/hooks/useRouting';
 
 const WhoWeAre = () => {
+  const { navigateTo } = useRouting();
+  const toContactUs = () => {
+    navigateTo('/contact-us');
+  };
   return (
     <section id='about' className='w-full py-12 md:py-14 lg:py-22 '>
       <div>
@@ -88,7 +93,10 @@ const WhoWeAre = () => {
                     </p>
                   </div>
                 </div>
-                <Button className='mt-4 w-full bg-white text-[#e78124] hover:bg-gray-100'>
+                <Button
+                  onClick={() => toContactUs()}
+                  className='mt-4 w-full bg-white text-[#e78124] hover:bg-gray-100'
+                >
                   Get Involved Now
                 </Button>
               </CardContent>
